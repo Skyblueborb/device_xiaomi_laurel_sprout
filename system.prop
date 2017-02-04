@@ -62,7 +62,7 @@ ro.netflix.bsp_rev=Q6125-17995-1
 persist.radio.NO_STAPA=1
 persist.rcs.supported = 1
 persist.rmnet.data.enable=true
-ro.telephony.default_network=9,9
+ro.telephony.default_network=22,22
 
 # RIL
 ril.subscription.types=RUIM
