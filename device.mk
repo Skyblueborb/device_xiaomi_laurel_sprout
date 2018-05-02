@@ -166,7 +166,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.renderer=skiavk \
-    debug.sf.disable_backpressure=1
+    debug.sf.disable_backpressure=1 \
+    vendor.display.disable_rotator_downscale=1
 
 # GPS
 LOC_HIDL_VERSION = 4.0
