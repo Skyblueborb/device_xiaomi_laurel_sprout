@@ -11,3 +11,5 @@ set_prop(vendor_init, vendor_freq_prop)
 set_prop(vendor_init, vendor_camera_prop)
 set_prop(vendor_init, vendor_persist_camera_prop)
 set_prop(vendor_init, vendor_video_prop)
+
+allow init proc_last_kmsg:file { r_file_perms setattr };
