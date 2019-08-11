@@ -29,7 +29,7 @@ cc_binary {
         "libhwbinder",
         "libutils",
         "vendor.aospa.biometrics.fingerprint.inscreen@1.0",
-        "//hardware/xiaomi:vendor.xiaomi.hardware.fingerprintextension@1.0",
+        "vendor.xiaomi.hardware.fingerprintextension@1.0",
     ],
     system_ext_specific: true,
 }
