@@ -211,6 +211,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.power.pasr.enabled=true
 
+# ParanoidDoze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sensor.proximity=true \
+    ro.sensor.pickup=android.sensor.tilt_detector
+
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
