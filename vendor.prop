@@ -204,6 +204,7 @@ persist.vendor.sensors.enable.rt_task=false
 persist.vendor.sensors.support_direct_channel=false
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.com.android.dataroaming=true
+ro.telephony.default_network=22,22
 
 # SurfaceFlinger
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
