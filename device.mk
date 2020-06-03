@@ -131,6 +131,11 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl \
+    android.hardware.light@2.0-service
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
 
