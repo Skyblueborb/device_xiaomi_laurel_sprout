@@ -87,6 +87,14 @@ service sec_nvm /vendor/bin/sec_nvm
     user system
     group system
 
+on late-init
+    # Start services for bootanim
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-3
+    start vendor.configstore-hal
+    start vendor.qti.hardware.display.allocator
+
 on post-fs-data
 #    mkdir /data/vendor/hbtp 0750 system system
     mkdir /persist/qti_fp 0700 system system
