@@ -40,7 +40,7 @@ using ::android::base::ReadFileToString;
 using ::android::base::WriteStringToFile;
 
 // Default max brightness
-constexpr auto kDefaultMaxLedBrightness = 255;
+constexpr auto kDefaultMaxScreenBrightness = 255;
 
 // Write value to path and close file.
 bool WriteToFile(const std::string& path, uint32_t content) {
