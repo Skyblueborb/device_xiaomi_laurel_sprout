@@ -47,6 +47,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    FrameworksResTarget \
     LaurelFrameworks \
     LaurelSystemUI
 
