@@ -465,10 +465,6 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
-# Thermal
-PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.qti
-
 # Trust
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
