@@ -220,6 +220,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 28
 
+# System Helper
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.systemhelper@1.0.vendor
+
 # Telephony
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
