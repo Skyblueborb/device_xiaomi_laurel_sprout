@@ -3714,7 +3714,6 @@ vendor/lib/libcppf.so
 vendor/lib/libhdcpsrm.so
 vendor/lib/libhdcp1prov.so
 vendor/lib/libhdcp2p2prov.so
-vendor/lib/liboemcrypto.so
 vendor/lib/libops.so
 vendor/lib/libpvr.so
 vendor/lib/librmp.so
@@ -3726,7 +3725,6 @@ vendor/lib64/libcpion.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
-vendor/lib64/liboemcrypto.so
 vendor/lib64/libops.so
 vendor/lib64/libpvr.so
 vendor/lib64/librmp.so
@@ -3809,3 +3807,12 @@ vendor/lib64/libwfddisplayconfig_proprietary.so
 vendor/lib64/libwfdhdcpcp.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+
+# Widevine - Stock
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine|4db49073828ddcf51d54e278896b6279f17f75b7
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|dee5b7838ac561a2292e89fc0c4ccd1932224215
+vendor/lib/liboemcrypto.so|822a8413aa5229e66b090113295f79d6839c004f
+vendor/lib/libwvhidl.so|611876c2dacd4b9dc2b7fdce84a7409e02840d27
+vendor/lib/mediadrm/libwvdrmengine.so|89957029a847a843f51c6d0cc04720485e31f752
+vendor/lib64/liboemcrypto.so|14289b52bddd8d5ad100452c475cf4cbedca67cb
+vendor/lib64/mediadrm/libwvdrmengine.so|99df7a941fcae6a60f6cec7bdab846d6744e0231
