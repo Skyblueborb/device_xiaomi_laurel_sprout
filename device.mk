@@ -73,6 +73,9 @@ TARGET_COMMON_QTI_COMPONENTS += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 28
 
+# Treble
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
