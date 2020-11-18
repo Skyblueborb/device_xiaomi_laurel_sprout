@@ -78,6 +78,10 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl-qti \
     android.hardware.boot@1.1-service
 
+# DPM
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.dpmhalservice.enable=1
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
@@ -146,8 +150,25 @@ TARGET_COMMON_QTI_COMPONENTS += \
     wfd \
     wlan
 
+# RIL
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.multisim.config=dsds \
+    persist.vendor.radio.apm_sim_not_pwdn=1 \
+    persist.vendor.radio.custom_ecc=1 \
+    persist.vendor.radio.enableadvancedscan=true \
+    persist.vendor.radio.procedure_bytes=SKIP \
+    persist.vendor.radio.rat_on=combine \
+    persist.vendor.radio.sib16_support=1 \
+    rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 28
+
+# Telephony
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
+    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
+    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
