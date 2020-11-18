@@ -122,6 +122,10 @@ PRODUCT_PACKAGES += \
     LaurelFrameworks \
     LaurelSystemUI
 
+# PASR HAL
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.power.pasr.enabled=true
+
 # Platform
 TARGET_BOARD_PLATFORM := trinket
 
