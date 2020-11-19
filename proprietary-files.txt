@@ -3070,6 +3070,17 @@ vendor/etc/ftm_test_config_sm6150-tavil-snd-card
 vendor/lib/ftm_fm_lib.so
 vendor/lib64/ftm_fm_lib.so
 
+# Fingerprint - Stock
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|3046335633eea3182fdabc6ed7746646bc52929e
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|c69b52e99e2a453f1ac2d54b524e8df9fec1c716
+vendor/lib/vendor.qti.hardware.fingerprint@1.0.so|b953f19ff4ce4764b6b236a682af7c6db2425d86
+vendor/lib64/hw/fingerprint.goodix_fod.so|0c345ed3c0f8ae780901bc5ac320114219d584ce
+vendor/lib64/libgf_hal.so|08570757f2295396a0952e27531f7ba6cd6b13f8
+vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so|20d86ff0add814d63ba297b973c74f5088d2ab00
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|241479a335ea91ab6c903c74f64aad3bae0a3b61
+vendor/lib64/vendor.qti.hardware.fingerprintext@1.0.so|21e1f0f7e66f9223b7b5bf96af517271f9b72ef3
+vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so|74e470a473d6469569e21449cb317d5c6583cfd6
+
 # IMS
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
