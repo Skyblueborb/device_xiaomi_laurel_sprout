@@ -1,3 +1,23 @@
+# ACDB Database - Custom
+vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb|a2f072a6e1e963271ede327fca282afcc3794e8b
+vendor/etc/acdbdata/IDP/IDP_Codec_cal.acdb|e769c3f9a87f46ce5e454e4fee76748c5a3e3d9c
+vendor/etc/acdbdata/IDP/IDP_General_cal.acdb|1ca9b48b88d758151ac85c8b928e9da6d0d705b8
+vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb|0f4ae6de5a1cf0f868b4b6dcdc03ae62bf7e22a0
+vendor/etc/acdbdata/IDP/IDP_Handset_cal.acdb|f05dc2acddd3e4a294d7bf8bb8f68965643ec3ca
+vendor/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb|68530c3f306080ee7c0f776669a69b92cde7ac40
+vendor/etc/acdbdata/IDP/IDP_Headset_cal.acdb|75200c10b96a871c3ae07306cc0463abb137a70f
+vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb|cf2107bf84e9235cbb0a88c2b8c8f71f95265559
+vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp|1ae3274fa8901fe32a67c08c85823fd68431fcf9
+vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|7c1f89958baf47515918a11fbba0cc77e3ea600f
+vendor/etc/acdbdata/QRD/QRD_Codec_cal.acdb|836dca4cfb2e3399a3f7e0e2868b4e85fe7c9c62
+vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|3caade3654c6f18b83ba2a5fad667222952aa46a
+vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|88bdc9050c06b7cf9439ad54daf3943eebf5fc07
+vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|091e03b2e71d36c2a414c2d60bc7ced3f158e69e
+vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|840949a11584351e5b8fc69b8479dba339ee38fd
+vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|63c1307d7bf7c09a613cdfd561e2e143eda8f5e3
+vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|852196500eee46c66bf9ba0ff505ea655ba66909
+vendor/etc/acdbdata/adsp_avs_config.acdb|0132130ff591a68a501e2e50c47a951b3b9253ea
+
 # ADSPRPC
 vendor/bin/adsprpcd
 vendor/bin/cdsprpcd
@@ -74,31 +94,6 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # Audio
 vendor/bin/audioflacapp
-vendor/etc/acdbdata/IDP/trinket-tavil-snd-card/IDP_WCD9340_Bluetooth_cal.acdb
-vendor/etc/acdbdata/IDP/trinket-tavil-snd-card/IDP_WCD9340_Codec_cal.acdb
-vendor/etc/acdbdata/IDP/trinket-tavil-snd-card/IDP_WCD9340_General_cal.acdb
-vendor/etc/acdbdata/IDP/trinket-tavil-snd-card/IDP_WCD9340_Global_cal.acdb
-vendor/etc/acdbdata/IDP/trinket-tavil-snd-card/IDP_WCD9340_Handset_cal.acdb
-vendor/etc/acdbdata/IDP/trinket-tavil-snd-card/IDP_WCD9340_Hdmi_cal.acdb
-vendor/etc/acdbdata/IDP/trinket-tavil-snd-card/IDP_WCD9340_Headset_cal.acdb
-vendor/etc/acdbdata/IDP/trinket-tavil-snd-card/IDP_WCD9340_Speaker_cal.acdb
-vendor/etc/acdbdata/IDP/trinket-tavil-snd-card/IDP_WCD9340_workspaceFile.qwsp
-vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Codec_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_General_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Handset_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Headset_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp
-vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 vendor/lib/hw/sound_trigger.primary.trinket.so
 vendor/lib/soundfx/libasphere.so
