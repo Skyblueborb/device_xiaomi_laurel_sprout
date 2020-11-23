@@ -26,11 +26,6 @@ vendor/lib64/libssc_default_listener.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Adreno
-vendor/firmware/a610_zap.b00
-vendor/firmware/a610_zap.b01
-vendor/firmware/a610_zap.b02
-vendor/firmware/a610_zap.elf
-vendor/firmware/a610_zap.mdt
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
@@ -3052,6 +3047,45 @@ vendor/lib/libfastcvdsp_stub.so
 -vendor/lib/libfastcvopt.so
 vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
+
+# Firmware - Adreno, Display and Touchscreen
+vendor/firmware/a225_pfp.fw|7ba4003796285d36c125fabe453b45d5e21850cc
+vendor/firmware/a225_pm4.fw|87d6f27ca08b521cc3361f63f0631a1fef2403ac
+vendor/firmware/a225p5_pm4.fw|02e5fb26c121d388104bc6a0f31811dfa91f1828
+vendor/firmware/a300_pfp.fw|899dbfad4812084971cfc1ff30f06a4b45c2d34c
+vendor/firmware/a300_pm4.fw|94529206b45b6e9f6ed30dadabe4244a88a60975
+vendor/firmware/a330_pfp.fw|3e2fcee7276ded819cf2d95864fdd6788a484ee1
+vendor/firmware/a330_pm4.fw|ae739ea812f9e4462d7bba8b9ead5782d4496618
+vendor/firmware/a420_pfp.fw|ceb61d9f1385b3f2956d72f33e0bd43cb12f72f0
+vendor/firmware/a420_pm4.fw|96addc1f5cb6dd3a57fc40ef0a6ba8721d5b601f
+vendor/firmware/a530_gpmu.fw2|706da8d5ee565dcf456341f805ee75a40773f65a
+vendor/firmware/a530_pfp.fw|d027c70fde64241ec13160d09ee1b6c272974a4b
+vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
+vendor/firmware/a530v1_pfp.fw|0864291b99bed712edfcffa94be7b4595d3af306
+vendor/firmware/a530v1_pm4.fw|6a82a4fb4035fa2a933c1a26b5535d7ec7c0ac4c
+vendor/firmware/a530v2_seq.fw2|63b6d25594a5c1f4217d996a2b636e17a29fc840
+vendor/firmware/a530v3_gpmu.fw2|0a2f6f450231673d75ba39e5d28776db3becf810
+vendor/firmware/a530v3_seq.fw2|8963a53acc689725dee4b22881a4dd4b80e5def8
+vendor/firmware/a540_gpmu.fw2|3530f10b4825a3b08c79e0bcfaf6471ec8422f24
+vendor/firmware/a610_zap.b00|cdc0262ea8bc3fa3796be6150cd5430abeeeab8d
+vendor/firmware/a610_zap.b01|a642723de65989aef00c69dac0067be5a2610e34
+vendor/firmware/a610_zap.b02|a29356777d8a39fde907ee051a8a2fd1eea28c23
+vendor/firmware/a610_zap.elf|59d5919e74ae40f73a4372396044c23827d34d3b
+vendor/firmware/a610_zap.mdt|5d340bbcbd52aa56c3a3fa05ad99efa4dc688e23
+vendor/firmware/a612_rgmu.bin|cb8705d5bc417e53863ed16ab0bed2fc1489646f
+vendor/firmware/a630_gmu.bin|32bb4acc7767c47ddb487ed7cb998d465ee462f2
+vendor/firmware/a630_sqe.fw|a7a91327db8043a3c9ad85f11356984bbc401026
+vendor/firmware/a640_gmu.bin|fb1eab0dd5f313abf31441e2209c9398da7df98b
+vendor/firmware/focaltech-ft3518-sumsung.ini|b211bef1c4111bd6bdc6ea4d44c4a604331a116d
+vendor/firmware/gtx8_limits.csv|f3561bfb8371b93a676871815823c489d99c46dc
+vendor/firmware/leia_pfp_470.fw|46a8ce821d218359ff7e846db5dcc15b31bdd5ca
+vendor/firmware/leia_pm4_470.fw|99364b0afd94e496ccc833ca0424dd6853b971d5
+vendor/firmware/sign_xiaomi/a610_zap.b00|cdc0262ea8bc3fa3796be6150cd5430abeeeab8d
+vendor/firmware/sign_xiaomi/a610_zap.b01|a642723de65989aef00c69dac0067be5a2610e34
+vendor/firmware/sign_xiaomi/a610_zap.b02|a29356777d8a39fde907ee051a8a2fd1eea28c23
+vendor/firmware/sign_xiaomi/a610_zap.elf|59d5919e74ae40f73a4372396044c23827d34d3b
+vendor/firmware/sign_xiaomi/a610_zap.mdt|5d340bbcbd52aa56c3a3fa05ad99efa4dc688e23
+vendor/firmware/wigig/wigig.ini|1ec12833a14cab778168c24c283e237cadbd1781
 
 # FM
 vendor/bin/fm_qsoc_patches
