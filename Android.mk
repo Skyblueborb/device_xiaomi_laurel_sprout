@@ -20,9 +20,6 @@ include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
 
-# Common
-include vendor/qcom/opensource/core-utils/build/AndroidBoardCommon.mk
-
 # Symlinks
 EGL_LIBRARIES := \
 	libEGL_adreno.so \
