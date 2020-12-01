@@ -3,3 +3,6 @@ allow init {
     vendor_sysfs_fod
     display_sysfs_graphics
 }:file { open read setattr };
+
+# Allow init to bind mount files in vendor/etc.
+allow init vendor_configs_file:file mounton;
