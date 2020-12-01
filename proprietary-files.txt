@@ -3791,9 +3791,11 @@ vendor/etc/init/tloc_daemon.rc
 # Thermal
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
-vendor/etc/thermal-engine.conf
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
+
+# Thermal Config - Stock
+vendor/etc/thermal-engine.conf|c1be4316dbd1bba97f58e4f508abf0d20c375b9b
 
 # Time Services
 -vendor/app/TimeService/TimeService.apk;PRESIGNED
