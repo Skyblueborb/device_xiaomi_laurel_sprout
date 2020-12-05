@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Platform
+TARGET_BOARD_PLATFORM := trinket
+TRINKET := trinket
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -188,9 +192,6 @@ PRODUCT_PACKAGES += \
 # PASR HAL
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.power.pasr.enabled=true
-
-# Platform
-TARGET_BOARD_PLATFORM := trinket
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
