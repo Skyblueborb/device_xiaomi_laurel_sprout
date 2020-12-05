@@ -3018,6 +3018,29 @@
         <ctl name="WSA_CDC_DMA_RX_0_DL_HL Switch" value="1" />
     </path>
 
+    <!--  Xiaomi audio paths. -->
+    <path name="second-mic">
+        <path name="amic3" />
+    </path>
+
+    <path name="speaker_ata">
+    </path>
+
+    <path name="voip-dmic-endfire-mi">
+        <path name="handset-dmic-endfire" />
+        <ctl name="IIR0 INP0 MUX" value="DEC0" />
+    </path>
+
+    <path name="voip-headset-mi">
+        <path name="headphones" />
+    </path>
+
+    <path name="voip-speaker-mi">
+    </path>
+
+    <path name="max-speaker-mi">
+    </path>
+
     <path name="call-proxy">
     </path>
 
