@@ -104,6 +104,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-service
 
 # Camera
+TARGET_NEEDS_RAW10_BUFFER_FIX := true
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
