@@ -176,6 +176,7 @@ PRODUCT_PACKAGES += \
 # Initialization
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.laurel.rc \
     init.qti.dcvs.sh \
     init.target.rc
 
