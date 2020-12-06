@@ -77,9 +77,6 @@ DEVICE_MANIFEST_FILE := \
 
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
-# GPS
-include hardware/qcom/gps/gps_vendor_board.mk
-
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
