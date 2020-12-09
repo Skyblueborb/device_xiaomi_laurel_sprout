@@ -1,3 +1,5 @@
+# Proprietary files - from LA.UM.9.11.r1-02400-NICOBAR.0, unless pinned
+
 # ACDB Database - Custom
 vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb|a2f072a6e1e963271ede327fca282afcc3794e8b
 vendor/etc/acdbdata/IDP/IDP_Codec_cal.acdb|e769c3f9a87f46ce5e454e4fee76748c5a3e3d9c
@@ -250,8 +252,6 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
-vendor/etc/cne/profileSlm.xml
-vendor/etc/cne/slm.conf
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/etc/init/mutualex.rc
@@ -2963,6 +2963,8 @@ vendor/lib64/libqdi.so
 vendor/lib64/libqdp.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.0.so
+vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so
+vendor/lib64/vendor.qti.hardware.embmssl@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 
 # Diag
@@ -3188,6 +3190,7 @@ vendor/lib64/vendor.qti.gnss@2.1.so
 vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.gnss@4.0-service.so
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
 # IMS
 vendor/bin/ims_rtp_daemon
@@ -3753,7 +3756,6 @@ vendor/lib/libcppf.so
 vendor/lib/libhdcpsrm.so
 vendor/lib/libhdcp1prov.so
 vendor/lib/libhdcp2p2prov.so
-vendor/lib/libops.so
 vendor/lib/libpvr.so
 vendor/lib/librmp.so
 vendor/lib/libqisl.so
@@ -3764,7 +3766,6 @@ vendor/lib64/libcpion.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
-vendor/lib64/libops.so
 vendor/lib64/libpvr.so
 vendor/lib64/librmp.so
 vendor/lib64/libqisl.so
