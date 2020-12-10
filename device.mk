@@ -72,6 +72,9 @@ PRODUCT_PACKAGES += \
     libtinycompress.vendor \
     libvolumelistener
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.audio.feature.spkr_prot.enable=false
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_qrd.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml
