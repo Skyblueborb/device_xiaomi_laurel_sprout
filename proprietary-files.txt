@@ -3851,10 +3851,13 @@ vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 
 # Widevine - Stock
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine|4db49073828ddcf51d54e278896b6279f17f75b7
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|dee5b7838ac561a2292e89fc0c4ccd1932224215
 vendor/lib/liboemcrypto.so|822a8413aa5229e66b090113295f79d6839c004f
-vendor/lib/libwvhidl.so|611876c2dacd4b9dc2b7fdce84a7409e02840d27
 vendor/lib/mediadrm/libwvdrmengine.so|89957029a847a843f51c6d0cc04720485e31f752
 vendor/lib64/liboemcrypto.so|14289b52bddd8d5ad100452c475cf4cbedca67cb
 vendor/lib64/mediadrm/libwvdrmengine.so|99df7a941fcae6a60f6cec7bdab846d6744e0231
+
+# Widevine - Sunfish (RQ1A.201205.008)
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine|75103a18355966370895526dc9afb6adff4b755b
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
+vendor/lib64/libwvhidl.so|68d257f6c4b409f71f80c231789d9951f71308a8
