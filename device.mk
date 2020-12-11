@@ -103,6 +103,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     libcamera2ndk_vendor \
     libdng_sdk.vendor
+    libmedia_jni_shim
 
 # Expose auxilary camera props
 PRODUCT_PROPERTY_OVERRIDES += \

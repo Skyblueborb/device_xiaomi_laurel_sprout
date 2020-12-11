@@ -209,6 +209,11 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_laurel_sprout
 # qssi.prop
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/qssi.prop
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    system/lib/libcameraservice.so|libmedia_jni_shim.so
+
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/laurel_sprout/BoardConfigVendor.mk
 
