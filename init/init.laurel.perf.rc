@@ -1,0 +1,57 @@
+# Copyright (C) 2020 Paranoid Android
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+on late-fs
+    # Start services early for Boot Animation.
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-4
+    start vendor.configstore-hal
+    start vendor.qti.hardware.display.allocator
+
+on property:vendor.post_boot.parsed=1
+    # Sched Tunables.
+    write /proc/sys/kernel/sched_upmigrate 95
+    write /proc/sys/kernel/sched_downmigrate 85
+    write /proc/sys/kernel/sched_autogroup_enabled 0
+    write /proc/sys/kernel/sched_walt_rotate_big_tasks 0
+    write /sys/devices/system/cpu/cpu0/core_ctl/enable 0
+
+    # Setup cpusets.
+    write /dev/cpuset/top-app/cpus 0-7
+    write /dev/cpuset/foreground/cpus 0-3,6-7
+    write /dev/cpuset/background/cpus 0-1
+    write /dev/cpuset/system-background/cpus 0-3
+    write /dev/cpuset/restricted/cpus 0-3
+
+    # Setup blkio.
+    write /dev/blkio/blkio.weight 1000
+    write /dev/blkio/background/blkio.weight 200
+    write /dev/blkio/blkio.group_idle 2000
+    write /dev/blkio/background/blkio.group_idle 0
+
+    # Setup default schedTune value for foreground/top-app
+    write /dev/stune/foreground/schedtune.prefer_idle 1
+    write /dev/stune/top-app/schedtune.boost 10
+    write /dev/stune/top-app/schedtune.prefer_idle 1
+
+    # Setup EAS Tunables.
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 50
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 20000
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq 1420800
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 864000
+
+    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us 50
+    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us 20000
+    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 652800

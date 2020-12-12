@@ -187,6 +187,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.laurel.rc \
+    init.laurel.perf.rc \
     init.qti.dcvs.sh \
     init.target.rc
 
