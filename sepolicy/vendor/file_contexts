@@ -1,0 +1,2 @@
+# Camera
+/mnt/vendor/persist/camera(/.*)?                                                               u:object_r:persist_camera_file:s0
