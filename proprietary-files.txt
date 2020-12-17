@@ -3796,7 +3796,8 @@ vendor/etc/init/init_thermal-engine.rc
 -vendor/lib64/libthermalclient.so
 
 # Thermal Config - Stock
-vendor/etc/thermal-engine.conf|c1be4316dbd1bba97f58e4f508abf0d20c375b9b
+vendor/etc/thermal-engine-map.conf|8cee010443a42052353f3134894dc8d6b2280a23
+vendor/etc/thermal-engine-normal.conf|c1be4316dbd1bba97f58e4f508abf0d20c375b9b
 
 # Time Services
 -vendor/app/TimeService/TimeService.apk;PRESIGNED
