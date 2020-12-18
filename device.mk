@@ -73,6 +73,7 @@ PRODUCT_PACKAGES += \
     libvolumelistener
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.audio.sdk.fluencetype=fluence \
     vendor.audio.feature.spkr_prot.enable=false
 
 PRODUCT_COPY_FILES += \
