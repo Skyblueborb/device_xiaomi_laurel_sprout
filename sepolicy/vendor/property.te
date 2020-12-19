@@ -1,2 +1,5 @@
 # Camera
 type vendor_ro_camera_prop, property_type;
+
+# Fingerprint
+type vendor_fingerprint_prop, property_type;

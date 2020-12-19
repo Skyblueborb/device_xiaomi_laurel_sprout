@@ -1,0 +1,40 @@
+# Allow the fingerprint service to access /dev/goodix_fp.
+allow hal_fingerprint_default fingerprint_device:chr_file rw_file_perms;
+allow hal_fingerprint_default fingerprint_data_file:chr_file rw_file_perms;
+allow hal_fingerprint_default fingerprint_data_file:dir create_dir_perms;
+allow hal_fingerprint_default fingerprint_data_file:file create_file_perms;
+
+# Allow the fingerprint to find and fingerprint extensions.
+allow hal_fingerprint_default hal_fingerprint_hwservice_xiaomi:hwservice_manager find;
+add_hwservice(hal_fingerprint_default, hal_fingerprint_hwservice_xiaomi)
+
+# Allow the fingerprint to read and write to dev/input/event nodes.
+allow hal_fingerprint_default input_device:dir r_dir_perms;
+allow hal_fingerprint_default input_device:chr_file rw_file_perms;
+
+# Allow the fingerprint to read and write to sysfs nodes.
+allow hal_fingerprint_default vendor_sysfs_fod:file rw_file_perms;
+
+# Allow the fingerprint service to create the netlink socket.
+allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
+
+# Allow the fingerprint service to read & write to /dev/qseecom.
+allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
+
+# Allow the fingerprint service to read & write to /dev/adsprpc-smd.
+allow hal_fingerprint_default vendor_qdsp_device:chr_file rw_file_perms;
+
+# Allow the fingerprint service to read & write to /dev/adsprpc-smd-secure.
+allow hal_fingerprint_default vendor_xdsp_device:chr_file rw_file_perms;
+
+# Allow the fingerprint to read firmware.
+r_dir_file(hal_fingerprint_default, firmware_file)
+
+# Allow the fingerprint to get adsprpc props.
+get_prop(hal_fingerprint_default, vendor_adsprpc_prop)
+
+# Allow the fingerprint to set props in vendor.
+set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
+
+# Allow the fingerprint to access the perf HAL.
+hal_client_domain(hal_fingerprint_default, vendor_hal_perf)

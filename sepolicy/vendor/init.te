@@ -1,0 +1,5 @@
+# Allow init to chown/chmod nodes in sysfs.
+allow init {
+    vendor_sysfs_fod
+    display_sysfs_graphics
+}:file { open read setattr };

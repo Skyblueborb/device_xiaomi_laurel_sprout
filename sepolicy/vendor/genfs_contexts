@@ -1,0 +1,2 @@
+# Display backlight
+genfscon sysfs /devices/platform/soc/5e00000.qcom,mdss_mdp/backlight/panel0-backlight/brightness      u:object_r:display_sysfs_graphics:s0

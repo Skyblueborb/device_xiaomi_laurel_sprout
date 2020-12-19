@@ -1,0 +1,2 @@
+# Display sysfs node
+type display_sysfs_graphics, sysfs_type, fs_type;
