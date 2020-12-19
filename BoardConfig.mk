@@ -83,7 +83,6 @@ BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
-    androidboot.selinux=permissive \
     cgroup.memory=nokmem,nosocket \
     console=ttyMSM0,115200n8 \
     earlycon=msm_geni_serial,0x4a90000 \
@@ -121,6 +120,10 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_NO_RECOVERY := true
+
+# SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy/vendor
 
 # VNDK
 BOARD_VNDK_VERSION := current
