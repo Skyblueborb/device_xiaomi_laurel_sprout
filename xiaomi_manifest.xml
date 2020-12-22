@@ -42,6 +42,16 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- Infrared -->
+    <hal format="hidl">
+        <name>android.hardware.ir</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IConsumerIr</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- IWLAN -->
     <hal format="hidl">
         <name>vendor.qti.hardware.data.iwlan</name>

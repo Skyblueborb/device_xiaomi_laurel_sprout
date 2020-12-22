@@ -1,0 +1,5 @@
+# Allow IR to access read and write in /dev/spidev.
+allow hal_ir_default lirc_device:chr_file rw_file_perms;
+
+# Allow IR to get ro.lirc.dev prop.
+get_prop(hal_ir_default, lirc_prop)

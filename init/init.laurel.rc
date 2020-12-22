@@ -17,6 +17,10 @@ on init
     chown system system /dev/goodix_fp
     chmod 0660 /dev/goodix_fp
 
+# Setup IR device permissions
+    chown system system /dev/spidev0.1
+    chmod 0660 /dev/spidev0.1
+
 on post-fs-data
    mkdir /data/vendor/goodix
    mkdir /data/vendor/goodix/gf_data

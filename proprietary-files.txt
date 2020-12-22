@@ -3274,6 +3274,9 @@ vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
 vendor/firmware/ipa_fws.elf|192667226af25f2c6b75c47ac0decc00ec32675a
 vendor/firmware/ipa_fws.mdt|75f99555e5ae77fb1c743dcb7000745ca96617e2
 
+# IR - Stock
+vendor/lib64/hw/consumerir.default.so|bcb5ef973a2c4694f36d542118052623e5113028
+
 # Keymaster
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
