@@ -21,6 +21,10 @@ on late-fs
     start vendor.qti.hardware.display.allocator
 
 on property:vendor.post_boot.parsed=1
+    # Report max frequency to unity tasks.
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
     # Sched Tunables.
     write /proc/sys/kernel/sched_upmigrate 95
     write /proc/sys/kernel/sched_downmigrate 85
