@@ -31,6 +31,7 @@ on property:vendor.post_boot.parsed=1
     write /proc/sys/kernel/sched_autogroup_enabled 0
     write /proc/sys/kernel/sched_walt_rotate_big_tasks 0
     write /sys/devices/system/cpu/cpu0/core_ctl/enable 0
+    write /proc/sys/kernel/sched_autogroup_enabled 0
 
     # Setup cpusets.
     write /dev/cpuset/top-app/cpus 0-7
