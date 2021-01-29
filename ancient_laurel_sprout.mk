@@ -41,7 +41,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/redfin/redfin:11/RQ1A.210205.004/7038034:user/release-keys
 
 PRODUCT_PACKAGES += \
-    RemovePackages
+    RemovePackages \
+    FirefoxLite
 
 # Official-ify
 ANCIENT_OFFICIAL := true
