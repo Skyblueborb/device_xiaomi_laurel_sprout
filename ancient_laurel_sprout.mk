@@ -43,7 +43,8 @@ BUILD_FINGERPRINT := google/redfin/redfin:11/RQ1A.210205.004/7038034:user/releas
 PRODUCT_PACKAGES += \
     RemovePackages \
     FirefoxLite \
-    GCamGo
+    GCamGo \
+    GalleryGo2
     
 # Official-ify
 ANCIENT_OFFICIAL := true
