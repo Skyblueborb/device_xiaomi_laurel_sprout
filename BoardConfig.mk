@@ -69,5 +69,9 @@ BOARD_USES_METADATA_PARTITION := true
 
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := trinket
+
 # Inherit the proprietary files
 include vendor/xiaomi/laurel_sprout/BoardConfigVendor.mk
