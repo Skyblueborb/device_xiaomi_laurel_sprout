@@ -77,5 +77,8 @@ TARGET_BOARD_PLATFORM := trinket
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Sepolicy
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+
 # Inherit the proprietary files
 include vendor/xiaomi/laurel_sprout/BoardConfigVendor.mk
