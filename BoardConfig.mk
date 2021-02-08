@@ -81,6 +81,9 @@ TARGET_BOARD_PLATFORM := trinket
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Security patch level
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
+
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
