@@ -18,5 +18,9 @@ TARGET_SCREEN_WIDTH := 720
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/laurel_sprout/laurel_sprout-vendor.mk)
