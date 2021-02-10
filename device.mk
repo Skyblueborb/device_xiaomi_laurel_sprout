@@ -78,6 +78,32 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.4-impl \
+    android.hardware.graphics.composer@2.4-service \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    vendor.qti.hardware.display.allocator-service
+
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.mapper@3.0-impl-qti-display \
+    android.hardware.graphics.mapper@4.0-impl-qti-display
+
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.display.mapper@2.0.vendor \
+    vendor.qti.hardware.display.mapper@3.0.vendor \
+    vendor.qti.hardware.display.mapper@4.0.vendor
+
+PRODUCT_PACKAGES += \
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor
+
+PRODUCT_PACKAGES += \
+    gralloc.trinket \
+    hwcomposer.trinket \
+    memtrack.trinket
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
 
