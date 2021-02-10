@@ -120,6 +120,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhwbinder.vendor
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
 
