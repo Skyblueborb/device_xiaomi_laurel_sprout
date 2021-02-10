@@ -139,6 +139,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.trinket
 
+# Media
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
+    libavservices_minijail_vendor
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
 
