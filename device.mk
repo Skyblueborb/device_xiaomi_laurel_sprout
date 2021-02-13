@@ -136,6 +136,9 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     android.hardware.light@2.0-service
 
+PRODUCT_PACKAGES += \
+    lights.trinket
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
 
