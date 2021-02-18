@@ -96,4 +96,7 @@ void vendor_load_properties()
 	set_dalvik_heap();
 
 	vendor_load_device_properties();
+
+    // Misc
+    property_override("ro.apex.updatable", "false");
 }
