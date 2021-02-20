@@ -154,11 +154,13 @@ vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/com.dsi.ant@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib/btaudio_offload_if.so
+vendor/lib/libbluetooth_audio_session_qti_2_1.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/libbt-hidlclient.so
 vendor/lib/libbtnv.so
@@ -169,11 +171,13 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/btaudio_offload_if.so
+vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
@@ -3170,6 +3174,7 @@ vendor/lib/com.qualcomm.qti.imscmservice@2.2.so
 vendor/lib/com.qualcomm.qti.uceservice@2.0.so
 vendor/lib/com.qualcomm.qti.uceservice@2.1.so
 vendor/lib/com.qualcomm.qti.uceservice@2.2.so
+vendor/lib/com.qualcomm.qti.uceservice@2.3.so
 vendor/lib/lib-imscmservice.so
 vendor/lib/lib-imsdpl.so
 vendor/lib/lib-imsqimf.so
@@ -3200,6 +3205,7 @@ vendor/lib64/com.qualcomm.qti.imscmservice@2.2.so
 vendor/lib64/com.qualcomm.qti.uceservice@2.0.so
 vendor/lib64/com.qualcomm.qti.uceservice@2.1.so
 vendor/lib64/com.qualcomm.qti.uceservice@2.2.so
+vendor/lib64/com.qualcomm.qti.uceservice@2.3.so
 vendor/lib64/lib-imscmservice.so
 vendor/lib64/lib-imsdpl.so
 vendor/lib64/lib-imsqimf.so
@@ -3400,6 +3406,7 @@ vendor/lib/vendor.qti.hardware.radio.ims@1.3.so
 vendor/lib/vendor.qti.hardware.radio.ims@1.4.so
 vendor/lib/vendor.qti.hardware.radio.ims@1.5.so
 vendor/lib/vendor.qti.hardware.radio.ims@1.6.so
+vendor/lib/vendor.qti.hardware.radio.ims@1.7.so
 vendor/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
 vendor/lib/vendor.qti.hardware.radio.lpa@1.0.so
 vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so
@@ -3409,6 +3416,8 @@ vendor/lib/vendor.qti.hardware.radio.qtiradio@2.1.so
 vendor/lib/vendor.qti.hardware.radio.qtiradio@2.2.so
 vendor/lib/vendor.qti.hardware.radio.qtiradio@2.3.so
 vendor/lib/vendor.qti.hardware.radio.qtiradio@2.4.so
+vendor/lib/vendor.qti.hardware.radio.qtiradio@2.5.so
+vendor/lib/vendor.qti.hardware.radio.qtiradio@2.6.so
 vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so
@@ -3440,6 +3449,7 @@ vendor/lib64/vendor.qti.hardware.radio.ims@1.3.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.4.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.5.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so
+vendor/lib64/vendor.qti.hardware.radio.ims@1.7.so
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
@@ -3449,6 +3459,8 @@ vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so
+vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so
+vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
@@ -3464,6 +3476,7 @@ vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db
 
 # QCV
