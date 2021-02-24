@@ -164,6 +164,9 @@ PRODUCT_PACKAGES += \
     libqservice \
     libtinyxml
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.disable_backpressure=1
+
 # GPS
 LOC_HIDL_VERSION = 4.0
 
