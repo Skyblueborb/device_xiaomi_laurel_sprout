@@ -27,9 +27,6 @@ on property:vendor.post_boot.parsed=1
 
     # Sched Tunables.
     write /proc/sys/kernel/sched_autogroup_enabled 0
-    write /proc/sys/kernel/sched_walt_rotate_big_tasks 0
-    write /sys/devices/system/cpu/cpu0/core_ctl/enable 0
-    write /proc/sys/kernel/sched_autogroup_enabled 0
 
     # Setup cpusets.
     write /dev/cpuset/top-app/cpus 0-7
@@ -48,18 +45,9 @@ on property:vendor.post_boot.parsed=1
     write /dev/stune/top-app/schedtune.boost 10
     write /dev/stune/top-app/schedtune.prefer_idle 1
 
-    # Setup Dynamic Stune Boost
-    write /sys/module/cpu_boost/parameters/dynamic_stune_boost 15
-    write /sys/module/cpu_boost/parameters/dynamic_stune_boost_ms 1500
-    write /dev/stune/top-app/schedtune.sched_boost 15
-
     # Setup EAS Tunables.
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 20000
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/pl 1
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 864000
 
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us 500
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us 20000
-    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/pl 1
-    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 652800
