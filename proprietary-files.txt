@@ -1,4 +1,4 @@
-# Proprietary files - from LA.UM.9.11.r1-02600-NICOBAR.0. Pinned blobs from qssi-user-11-RKQ1.200903.002-V12.0.3.0.RFQMIXM-release-keys Stock firmware.
+# Proprietary files - from LA.UM.9.11.r1-02800-NICOBAR.0. Pinned blobs from laurel_sprout-qssi-user-11-RKQ1.200903.002-V12.0.6.0.RFQMIXM-release-keys Stock firmware.
 
 # ACDB Database - Custom
 vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb|a2f072a6e1e963271ede327fca282afcc3794e8b
@@ -296,7 +296,7 @@ vendor/etc/camera/imx258_chromatix.xml|6f0e002d69a90e5e1b6c2499ad0d4218bf484f10
 vendor/etc/camera/imx258_lc898217xc_chromatix.xml|db19bf9fe9a909c1e29ec9ba6bda4439f6183da8
 vendor/etc/camera/imx258_mono_bear_chromatix.xml|81de051d0813deb56eb522e8e7cb1edbe9ee3afb
 vendor/etc/camera/imx258_mono_chromatix.xml|382cffbb90ef8ed163b81d59b4a87b6649fb86e5
-vendor/etc/camera/imx298_chromatix.xml|16203c12e71d3bc13862d11b4314e928a807f0d5
+vendor/etc/camera/imx298_chromatix.xml|f86b59c6ab3f1591ceb5295d00f69d5518d9b197
 vendor/etc/camera/imx298_gt24c64_chromatix.xml|6fcf7d93f2908d8b3b2548eaec9596c7f00dc538
 vendor/etc/camera/imx318_chromatix.xml|6ebc1f79f271c35d4d8b4301ec0ed3672993f873
 vendor/etc/camera/imx362_chromatix.xml|d9469f3ceed2b1e18bae2b301fea6bb591fa1c64
@@ -361,8 +361,8 @@ vendor/etc/camera/s5k3m2xx_chromatix.xml|affec08dad36ca998e9a7dabe55443bb88c8cc1
 vendor/etc/camera/s5k3m3sm_chromatix.xml|9b43ca155de34554b7c28eedfa97673c165f57ce
 vendor/etc/camera/s5k3p3sm_chromatix.xml|631f0c2cdee0e6839db4242aa40e9336376a6067
 vendor/etc/camera/s5k3p8sp_chromatix.xml|4057dcb0053813c9fe9033e304b60c4ef983611f
-vendor/etc/camera/s5k5e9yu05_mono_chromatix.xml|6494a7ff752f9a70c3d193dfb54b8527a81d6d89
-vendor/etc/camera/sceneDetection.xml|69d487d19d42e5e96c2ad537dac23d3890363c01
+vendor/etc/camera/s5k5e9yu05_mono_chromatix.xml|661f18c7bfc5ca933af75f5185140dc9516edba4
+vendor/etc/camera/sceneDetection.xml|ed7c9237881c670d5cc731732a0d9f4f592d21ba
 vendor/etc/camera/score_bg.png|6628867b901936b88fb6f88d494987a1b43533ec
 vendor/etc/camera/score_icon.png|8580e0abbf401a09c6581b82e9c00cd78fb8951f
 vendor/etc/camera/sdm660_camera_global.xml|9eadaa09f716ede53365df0f2aa8b93a01a32ef4
@@ -2996,19 +2996,19 @@ vendor/lib64/libfastcvdsp_stub.so
 
 # Firmware (Adreno) - Stock
 vendor/firmware/a610_zap.b00|cdc0262ea8bc3fa3796be6150cd5430abeeeab8d
-vendor/firmware/a610_zap.b01|218dba79a17a4dce5930ecb2e399546fc50b6ad2
+vendor/firmware/a610_zap.b01|9c82edfc5f7555eed969b0f1599fbe67e2c96711
 vendor/firmware/a610_zap.b02|a29356777d8a39fde907ee051a8a2fd1eea28c23
-vendor/firmware/a610_zap.elf|77d34fd1fb8cf5f59f86041b1725cdf7e56ccd1e
-vendor/firmware/a610_zap.mdt|08acd9233533057237896a8477b7ec7fa6bf3ac7
+vendor/firmware/a610_zap.elf|eb48fdf2c083076853d72e10d8d28d0fc208b399
+vendor/firmware/a610_zap.mdt|2989de0961c8c61f6a9a81d1db91ac5344b7b57b
 vendor/firmware/a612_rgmu.bin|cb8705d5bc417e53863ed16ab0bed2fc1489646f
 vendor/firmware/a630_gmu.bin|32bb4acc7767c47ddb487ed7cb998d465ee462f2
 vendor/firmware/a630_sqe.fw|e25094f97b44244775cc38a9d909fba6bd4cf76b
 vendor/firmware/a640_gmu.bin|fb1eab0dd5f313abf31441e2209c9398da7df98b
 vendor/firmware/sign_xiaomi/a610_zap.b00|cdc0262ea8bc3fa3796be6150cd5430abeeeab8d
-vendor/firmware/sign_xiaomi/a610_zap.b01|218dba79a17a4dce5930ecb2e399546fc50b6ad2
+vendor/firmware/sign_xiaomi/a610_zap.b01|9c82edfc5f7555eed969b0f1599fbe67e2c96711
 vendor/firmware/sign_xiaomi/a610_zap.b02|a29356777d8a39fde907ee051a8a2fd1eea28c23
-vendor/firmware/sign_xiaomi/a610_zap.elf|77d34fd1fb8cf5f59f86041b1725cdf7e56ccd1e
-vendor/firmware/sign_xiaomi/a610_zap.mdt|08acd9233533057237896a8477b7ec7fa6bf3ac7
+vendor/firmware/sign_xiaomi/a610_zap.elf|eb48fdf2c083076853d72e10d8d28d0fc208b399
+vendor/firmware/sign_xiaomi/a610_zap.mdt|2989de0961c8c61f6a9a81d1db91ac5344b7b57b
 
 # Firmware (Camera) - Stock
 vendor/firmware/cpp_firmware_v1_10_0.fw|a3c0fc706eb3f23b99852fe8c52c26f63999f70c
@@ -3026,12 +3026,12 @@ vendor/firmware/cpp_firmware_v1_8_0.fw|26e2badbb4e3049243f0a176722f26879e7b87e8
 
 # Firmware (IPA) - Stock
 vendor/firmware/ipa_fws.b00|aade3e72dc69e9649b73fa9363985c0997437854
-vendor/firmware/ipa_fws.b01|50656d55cbb5212c66cbc788e6430d0ac8518875
+vendor/firmware/ipa_fws.b01|5256e8feb2ab2240c48af3c6cdb65eeb1bd87286
 vendor/firmware/ipa_fws.b02|a4f15a2345382514ef64d40f58dbaa3f1e35c4e7
 vendor/firmware/ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
 vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
-vendor/firmware/ipa_fws.elf|b92ffdba31dfefd83e6ba63a2d0ddeb89d1e1699
-vendor/firmware/ipa_fws.mdt|040f3aae9f22f65a989ddd87493a70812ba2a388
+vendor/firmware/ipa_fws.elf|9542bfb1e1334d3cb3d10544b2887c24a6b77911
+vendor/firmware/ipa_fws.mdt|aa29ebba374901c40f7ee452ed51fd8513cd57a5
 
 # Firmware (Touchscreen) - Stock
 vendor/firmware/focaltech-ft3518-sumsung.ini|b211bef1c4111bd6bdc6ea4d44c4a604331a116d
@@ -3808,6 +3808,6 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff1906
 vendor/lib/liboemcrypto.so|d23d23d7bdacdc3f6dc2ceb3fe96e8532868db07
 vendor/lib/mediadrm/libwvdrmengine.so|5416366ba95cadd7d7a7787a8fd324d4c12c5933
 vendor/lib64/liboemcrypto.so|78a0009bc53e9f4f37cea2974f960fb0253e2328
-vendor/lib64/libwvhidl.so|ed7cd4a47e17738dfaec0c45d4184d75e77f5693
-vendor/lib64/mediadrm/libwvdrmengine.so|9cd722b68ae795f48b4a8f082fcfdc84219fb703
+vendor/lib64/libwvhidl.so|c03b9059440114531fd2b38beab6a894f79706f6
+vendor/lib64/mediadrm/libwvdrmengine.so|5e8e3f7db254b6360653224982df42bf7441ab4a
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
