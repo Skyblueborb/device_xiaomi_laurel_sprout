@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_laurel_sprout.mk
+    $(LOCAL_DIR)/ancient_laurel_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_laurel_sprout-user \
-    lineage_laurel_sprout-userdebug \
-    lineage_laurel_sprout-eng
+    ancient_laurel_sprout-user \
+    ancient_laurel_sprout-userdebug \
+    ancient_laurel_sprout-eng
