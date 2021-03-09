@@ -210,6 +210,10 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.sensor.proximity=true \
     ro.sensor.pickup=android.sensor.tilt_detector
 
+# Performance Config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml
+
 # QTI
 TARGET_COMMON_QTI_COMPONENTS += \
     adreno \
