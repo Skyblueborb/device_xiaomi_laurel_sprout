@@ -38,7 +38,7 @@ TARGET_VENDOR_PRODUCT_NAME := laurel_sprout
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="laurel_sprout-user 11 RKQ1.200903.002 V12.0.6.0.RFQMIXM release-keys"
 
-BUILD_FINGERPRINT := google/redfin/redfin:11/RQ1A.210205.004/7038034:user/release-keys
+BUILD_FINGERPRINT := google/redfin/redfin:11/RQ2A.210305.006/7119741:user/release-keys
 
 PRODUCT_PACKAGES += \
     RemovePackages \
