@@ -1,2 +1,6 @@
 # Camera
 get_prop(appdomain, vendor_persist_camera_prop)
+
+# Netflix
+get_prop(appdomain, vendor_netflix_prop)
+get_prop(appdomain, vendor_video_prop)

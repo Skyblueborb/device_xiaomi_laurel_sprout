@@ -6,3 +6,6 @@ type vendor_fingerprint_prop, property_type;
 
 # IR
 type lirc_prop, property_type;
+
+# Netflix
+type vendor_netflix_prop, property_type;

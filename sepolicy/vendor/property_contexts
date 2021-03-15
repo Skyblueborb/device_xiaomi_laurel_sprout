@@ -14,3 +14,6 @@ vendor.fps_hal.                    u:object_r:vendor_fingerprint_prop:s0
 
 # IR
 ro.lirc.dev                        u:object_r:lirc_prop:s0
+
+# Netflix
+ro.netflix.bsp_rev                 u:object_r:vendor_netflix_prop:s0
