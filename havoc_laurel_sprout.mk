@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common Ancient stuff
-$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Inherit from laurel_sprout device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,7 +28,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := ancient_laurel_sprout
+PRODUCT_NAME := havoc_laurel_sprout
 PRODUCT_MODEL := Mi A3
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
@@ -40,17 +40,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := google/redfin/redfin:11/RQ2A.210305.006/7119741:user/release-keys
 
-PRODUCT_PACKAGES += \
-    RemovePackages \
-    FirefoxLite \
-    GCamGo \
-    GalleryGo2
+#PRODUCT_PACKAGES += \
+#    RemovePackages \
+#    FirefoxLite \
+#    GCamGo \
+#    GalleryGo2
     
 # Official-ify
-ANCIENT_OFFICIAL := true
-FORCE_OTA := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USES_BLUR := true
-EXTRA_FOD_ANIMATIONS := true
-ANCIENT_GAPPS=true
+HAVOC_BUILD_TYPE := Official
 TARGET_GAPPS_ARCH := arm64

@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ancient_laurel_sprout.mk
+    $(LOCAL_DIR)/havoc_laurel_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    ancient_laurel_sprout-user \
-    ancient_laurel_sprout-userdebug \
-    ancient_laurel_sprout-eng
+    havoc_laurel_sprout-user \
+    havoc_laurel_sprout-userdebug \
+    havoc_laurel_sprout-eng
