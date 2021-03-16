@@ -27,6 +27,10 @@ on property:vendor.post_boot.parsed=1
 
     # Sched Tunables.
     write /proc/sys/kernel/sched_autogroup_enabled 0
+    write /proc/sys/kernel/sched_downmigrate 85
+    write /proc/sys/kernel/sched_downmigrate_boosted 25
+    write /proc/sys/kernel/sched_upmigrate 95
+    write /proc/sys/kernel/sched_upmigrate_boosted 25
 
     # Setup cpusets.
     write /dev/cpuset/top-app/cpus 0-7
