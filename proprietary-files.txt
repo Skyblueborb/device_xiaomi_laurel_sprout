@@ -3464,6 +3464,7 @@ vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
 
 # Camera provider
+system/lib/vendor.qti.hardware.camera.device@3.2.so
 vendor/bin/hw/android.hardware.camera.provider@2.4-service
 vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
 vendor/lib/android.hardware.camera.provider@2.4-external.so
