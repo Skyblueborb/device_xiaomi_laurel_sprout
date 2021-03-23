@@ -49,3 +49,7 @@ BUILD_FINGERPRINT := google/redfin/redfin:11/RQ2A.210305.006/7119741:user/releas
 # Official-ify
 HAVOC_BUILD_TYPE := Official
 TARGET_GAPPS_ARCH := arm64
+
+# Use gestures by default
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
