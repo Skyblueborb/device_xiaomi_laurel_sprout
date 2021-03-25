@@ -1,4 +1,4 @@
-# Proprietary files - from LA.UM.9.11.r1-02800-NICOBAR.0. Pinned blobs from laurel_sprout-qssi-user-11-RKQ1.200903.002-V12.0.6.0.RFQMIXM-release-keys Stock firmware.
+# Proprietary files - from LA.UM.9.11.r1-03200-NICOBAR.0. Pinned blobs from laurel_sprout-qssi-user-11-RKQ1.200903.002-V12.0.6.0.RFQMIXM-release-keys Stock firmware.
 
 # ADSPRPC
 vendor/bin/adsprpcd
@@ -3814,7 +3814,6 @@ vendor/lib64/libtime_genoff.so
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine|92e4797cb000e86ba74fba9da2c014d7ec8fa1a6
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
 vendor/lib/liboemcrypto.so|d23d23d7bdacdc3f6dc2ceb3fe96e8532868db07
-vendor/lib/mediadrm/libwvdrmengine.so|5416366ba95cadd7d7a7787a8fd324d4c12c5933
 vendor/lib64/liboemcrypto.so|78a0009bc53e9f4f37cea2974f960fb0253e2328
 vendor/lib64/libwvhidl.so|c03b9059440114531fd2b38beab6a894f79706f6
 vendor/lib64/mediadrm/libwvdrmengine.so|5e8e3f7db254b6360653224982df42bf7441ab4a
