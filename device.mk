@@ -163,7 +163,6 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.laurel.rc \
     init.laurel.perf.rc \
-    init.laurel.usb.rc \
     init.qti.dcvs.sh \
     init.target.rc
 
