@@ -697,5 +697,24 @@
     <string-array name="config_biometric_sensors" translatable="false" >
         <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
     </string-array>
+    
+    <!-- Vibrator pattern for feedback about a long screen/key press -->
+   <integer-array name="config_longPressVibePattern">
+       <item>0</item>
+       <item>8</item> 
+       <item>4</item>
+   </integer-array>
+
+   <!-- Vibrator pattern for feedback about touching a virtual key -->
+   <integer-array name="config_virtualKeyVibePattern">
+       <item>0</item>
+       <item>10</item>
+       <item>8</item>
+   </integer-array>
+
+   <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
+   <integer-array name="config_keyboardTapVibePattern">
+       <item>8</item>
+   </integer-array>
 
 </resources>
