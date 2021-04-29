@@ -1,0 +1,2 @@
+allow default_prop default_prop:file { read };
+allow default_prop default_prop:property_service { set };

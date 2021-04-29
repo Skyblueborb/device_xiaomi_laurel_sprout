@@ -1,0 +1,5 @@
+# vndbinder service
+type vndbinder, domain;
+type vndbinder_exec, exec_type, file_type;
+
+init_daemon_domain(vndbinder)
