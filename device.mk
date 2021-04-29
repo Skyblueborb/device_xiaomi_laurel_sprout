@@ -137,7 +137,6 @@ PRODUCT_PACKAGES += \
     libtinyxml
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.hwui.renderer=skiavk \
     debug.sf.disable_backpressure=1 \
     vendor.display.disable_rotator_downscale=1
 
