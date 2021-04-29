@@ -1,0 +1,1 @@
+allow vndbinder_device vndbinder_device:chr_file { ioctl  map  open  read  write };

@@ -1,0 +1,1 @@
+allow sysfs_rtc sysfs_rtc:file { getattr  open  read };
