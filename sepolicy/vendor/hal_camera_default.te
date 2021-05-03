@@ -14,3 +14,10 @@ set_prop(hal_camera_default, default_prop)
 get_prop(hal_camera_default, default_prop)
 set_prop(hal_camera_default, vendor_persist_camera_prop)
 get_prop(hal_camera_default, vendor_persist_camera_prop)
+
+allow hal_camera_default default_prop:file read;
+allow hal_camera_default default_prop:property_service set;
+allow hal_camera_default sysfs:dir read;
+allow hal_camera_default sysfs:file read;
+allow hal_camera_default vendor_default_prop:property_service set;
+allow hal_camera_default vendor_mpctl_prop:file read;
