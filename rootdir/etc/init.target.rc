@@ -492,3 +492,8 @@ service dcvs-sh /vendor/bin/init.qti.dcvs.sh
 
 on property:vendor.dcvs.prop=1
    start dcvs-sh
+   
+on property:sys.boot_completed=1
+    # Back to default VM settings
+    write /proc/sys/vm/dirty_expire_centisecs 3000
+    write /proc/sys/vm/dirty_background_ratio 10
