@@ -90,7 +90,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-service
 
 # Camera
-TARGET_NEEDS_RAW10_BUFFER_FIX := true
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
@@ -107,6 +106,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.expose.aux=1 \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.xiaomi.cameratools,com.factory.mmigroup
+
+# Charging
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.charger.enable_suspend=1
 
 # Config Store
 PRODUCT_PACKAGES += \
@@ -127,15 +130,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Display
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
-
-PRODUCT_PACKAGES += \
-    android.hardware.lights-service.qti \
-    libqdutils \
-    libqservice \
-    libtinyxml
-
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_backpressure=1 \
     vendor.display.disable_rotator_downscale=1
@@ -238,17 +232,6 @@ TARGET_COMMON_QTI_COMPONENTS += \
     wfd \
     wlan
 
-# RIL
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.multisim.config=dsds \
-    persist.vendor.radio.apm_sim_not_pwdn=1 \
-    persist.vendor.radio.custom_ecc=1 \
-    persist.vendor.radio.enableadvancedscan=true \
-    persist.vendor.radio.procedure_bytes=SKIP \
-    persist.vendor.radio.rat_on=combine \
-    persist.vendor.radio.sib16_support=1 \
-    rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
-
 # Sensors
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
@@ -270,6 +253,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.sensors.sync_request=true \
     persist.vendor.sensors.allow_non_default_discovery=true
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.vendor.sensors.enable.mag_filter=true
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 28
