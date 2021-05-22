@@ -49,6 +49,8 @@ PRODUCT_PACKAGES += \
 # Official-ify
 HAVOC_BUILD_TYPE := Official
 TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS=true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Use gestures by default
 PRODUCT_PRODUCT_PROPERTIES += \
