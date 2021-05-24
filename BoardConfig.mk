@@ -82,6 +82,7 @@ BOARD_KERNEL_CMDLINE += earlycon=msm_geni_serial,0x4a90000
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem,nosocket
 BOARD_KERNEL_CMDLINE += buildvariant=user
+BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
 TARGET_KERNEL_CONFIG := vendor/laurel_sprout-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/laurel_sprout
