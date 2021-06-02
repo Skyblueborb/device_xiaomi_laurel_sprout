@@ -171,6 +171,10 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.2.vendor
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
 
