@@ -31,6 +31,7 @@ vendor.fps_hal.                                 u:object_r:vendor_fp_prop:s0
 gpu.stats.debug.level                   u:object_r:vendor_default_prop:s0
 
 # RIL
+ro.product.wt.boardid                           u:object_r:exported_system_prop:s0
 ro.build.software.version               u:object_r:exported_default_prop:s0
 ro.fota.oem                             u:object_r:exported_default_prop:s0
 ro.miui.                                u:object_r:exported_default_prop:s0
