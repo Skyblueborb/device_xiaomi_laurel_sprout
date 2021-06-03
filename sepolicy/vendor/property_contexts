@@ -23,6 +23,9 @@ vendor.powerhal.lpm                             u:object_r:vendor_power_prop:s0
 vendor.powerhal.init                            u:object_r:vendor_power_prop:s0
 vendor.powerhal.rendering                       u:object_r:vendor_power_prop:s0
 
+# RIL
+ro.product.wt.boardid                           u:object_r:exported_system_prop:s0
+
 # Thermal
 sys.thermal.                                    u:object_r:vendor_thermal_normal_prop:s0
 persist.sys.thermal.                            u:object_r:vendor_thermal_normal_prop:s0
