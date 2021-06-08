@@ -202,6 +202,9 @@ on charger
     setprop vendor.usb.controller 4e00000.dwc3
     setprop sys.usb.configfs 1
 
+    chown system system /sys/class/leds/red/brightness
+    write /sys/class/leds/red/brightness 255
+
 on property:vendor.display.lcd_density=640
    setprop dalvik.vm.heapgrowthlimit 512m
 on property:vendor.display.lcd_density=560
