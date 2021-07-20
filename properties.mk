@@ -158,6 +158,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=1 \
 	debug.sf.auto_latch_unsignaled=true \
+	debug.sf.layer_caching_active_layer_timeout_ms=1000 \
     ro.opengles.version=196610 \
     ro.hardware.egl=adreno \
     ro.hardware.vulkan=adreno \
