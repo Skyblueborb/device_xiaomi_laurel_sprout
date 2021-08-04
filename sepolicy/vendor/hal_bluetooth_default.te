@@ -13,3 +13,6 @@ get_prop(bluetooth, incremental_prop)
 
 # Allow bluetooth to read proc filesystem
 allow bluetooth proc_filesystems:file r_file_perms;
+
+allow hal_bluetooth_default ramdump_vendor_data_file:dir rw_dir_perms;
+allow hal_bluetooth_default ramdump_vendor_data_file:file { create w_file_perms };
