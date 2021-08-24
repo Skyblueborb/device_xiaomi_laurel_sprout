@@ -187,6 +187,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
 PRODUCT_PACKAGES += \
+    android.hardware.camera.device@3.4 \
+    android.hardware.camera.device@3.5 \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service \
+    android.hardware.camera.provider@2.5 \
+    vendor.qti.hardware.camera.device@1.0 \
+    vendor.qti.hardware.camera.device@1.0.vendor \
     libstdc++.vendor \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
