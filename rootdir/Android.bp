@@ -38,6 +38,13 @@ sh_binary {
 
 // Init configuration files
 prebuilt_etc {
+    name: "init.laurel_sprout.rc",
+    src: "etc/init.laurel_sprout.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.qcom.rc",
     src: "etc/init.qcom.rc",
     sub_dir: "init/hw",
