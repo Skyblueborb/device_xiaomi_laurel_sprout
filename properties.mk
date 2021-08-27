@@ -124,10 +124,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.manufacturer=Xiaomi \
     persist.vendor.camera.eis.enable=1 \
     vendor.camera.not.cts.apk=1 \
-    vendor.camera.not.ctsverify.apk=1 \
-    vendor.camera.vidhance.eis.enabled=1 \
-    vendor.camera.vidhanceEis.force=1 \
-    vendor.vidhance.video.enabled=1
+    vendor.camera.not.ctsverify.apk=1
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
