@@ -1,4 +1,5 @@
 allow init vendor_file:file r_file_perms;
+allow init vendor_file:file { execute };
 allow init same_process_hal_file:file { execute };
 allow init hwservicemanager:binder { call };
 allow init adsprpcd_file:file mounton;
@@ -6,3 +7,4 @@ set_prop(init, vendor_camera_prop)
 
 # Smart charging
 allow init sysfs_battery_supply:file { setattr };
+
