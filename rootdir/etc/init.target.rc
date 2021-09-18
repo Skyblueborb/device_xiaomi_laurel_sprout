@@ -162,6 +162,10 @@ on boot
     setprop vendor.usb.qdss.inst.name "qdss"
     setprop sys.usb.configfs 1
 
+    # Restrict permissions to socket file 
+    # to hide Magisk & co.
+    chmod 440 /proc/net/unix
+
 #Give bk03 partition 0666 permissions, only in the ato version
 on boot && property:ro.factory_mode=1
 	chmod 0666 /dev/block/sde54
