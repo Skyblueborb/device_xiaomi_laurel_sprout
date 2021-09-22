@@ -203,6 +203,12 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
+# BT - dsi
+system/lib/com.dsi.ant@1.0.so
+system/lib64/com.dsi.ant@1.0.so
+vendor/lib/com.dsi.ant@1.0.so
+vendor/lib64/com.dsi.ant@1.0.so
+
 # CNE
 system_ext/framework/com.quicinc.cne.api-V1.1-java.jar
 system_ext/framework/com.quicinc.cne.constants-V1.0-java.jar
@@ -465,9 +471,12 @@ vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
 
 # FM
+system_ext/bin/dun-server
+system_ext/lib/com.qualcomm.qti.ant@1.0.so
 system_ext/lib/fm_helium.so
 system_ext/lib/libfm-hci.so
 system_ext/lib/vendor.qti.hardware.fm@1.0.so
+system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so
