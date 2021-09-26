@@ -945,6 +945,9 @@ on charger
     start qcom-post-boot
     start vendor.power_off_alarm
 
+    chown system system /sys/class/leds/red/brightness
+    write /sys/class/leds/red/brightness 255
+
 #add poweroffhandler
 service poweroffhandler /system/vendor/bin/poweroffhandler
     class core
