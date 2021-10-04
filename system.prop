@@ -27,6 +27,9 @@ ro.vendor.use_data_netmgrd=true
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
+
 # DPM
 persist.dpm.feature=1
 
