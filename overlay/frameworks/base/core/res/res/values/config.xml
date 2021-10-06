@@ -488,4 +488,15 @@
          manually by the user. Off by default, since the expected haptic feedback may not be
          available on some devices. -->
     <bool name="config_enableHapticTextHandle">true</bool>
+
+    <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
+    <integer-array name="config_udfps_sensor_props" translatable="false" >
+        <item>360</item>  <!-- <item>sensorLocationX</item> -->
+        <item>1423</item> <!-- <item>sensorLocationY</item> -->
+        <item>67</item>   <!-- <item>sensorRadius</item> -->
+    </integer-array>
+
+    <!-- How long it takes for the HW to start illuminating after the illumination is requested. -->
+    <integer name="config_udfps_illumination_transition_ms">0</integer>
+
 </resources>
