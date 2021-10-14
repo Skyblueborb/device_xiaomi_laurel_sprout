@@ -8,7 +8,7 @@
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/disp_param              u:object_r:vendor_sysfs_graphics:s0
 
 # Fingerprint
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.laurel_sprout                   u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.laurel_sprout                   u:object_r:hal_fingerprint_default_exec:s0
 
 # Fingerprint - data
 /data/gf_data(/.*)?                                                     u:object_r:fingerprint_data_file:s0
