@@ -8,4 +8,7 @@ on init
     chown system system /dev/goodix_fp
 
 on boot
+    chown system system /sys/class/drm/card0-DSI-1/fod_ui
+    chmod 0660 /sys/class/drm/card0-DSI-1/fod_ui
+
     chmod 0666 /dev/input/event2
