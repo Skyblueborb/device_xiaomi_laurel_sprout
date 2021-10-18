@@ -10,11 +10,6 @@
         <fqname>@6.0::IEffectsFactory/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.biometrics.fingerprint</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.3::IBiometricsFingerprint/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IBluetoothHci/default</fqname>
@@ -390,10 +385,5 @@
         <name>vendor.qti.power.pasrmanager</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IPasrManager/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.fingerprintextension</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IXiaomiFingerprint/default</fqname>
     </hal>
 </manifest>
