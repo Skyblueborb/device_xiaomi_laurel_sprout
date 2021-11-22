@@ -316,3 +316,6 @@ system_ext/lib/libqti-perfd-client_system.so
 
 # Camera service
 lib/libcameraservice.so
+
+# Wlan
+vendor/firmware/wlan/qca_cld/wlan_mac.bin
