@@ -50,7 +50,7 @@ vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libmialgo_sd.so
 vendor/lib/libmibokeh_660.so
-vendor/lib/libmm-qcamera.so 
+vendor/lib/libmm-qcamera.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
@@ -78,7 +78,7 @@ vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libswvdec.so
-vendor/lib64/libsysmon_cdsp_skel.so 
+vendor/lib64/libsysmon_cdsp_skel.so
 
 # Camera actuator
 vendor/lib/libactuator_ad5816g.so
@@ -2812,3 +2812,6 @@ vendor/firmware/sign_xiaomi/a610_zap.b01
 vendor/firmware/sign_xiaomi/a610_zap.b02
 vendor/firmware/sign_xiaomi/a610_zap.elf
 vendor/firmware/sign_xiaomi/a610_zap.mdt
+
+# Wlan
+vendor/firmware/wlan/qca_cld/wlan_mac.bin
