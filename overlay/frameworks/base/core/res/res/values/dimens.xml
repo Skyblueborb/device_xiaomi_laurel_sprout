@@ -26,4 +26,7 @@
 
     <!-- Radius of the software rounded corners. -->
     <dimen name="rounded_corner_radius">75px</dimen>
+    
+    <!-- Adjust the icon padding in status bar for rounded corners --> 
+    <dimen name="rounded_corner_content_padding">35px</dimen>
 </resources>
