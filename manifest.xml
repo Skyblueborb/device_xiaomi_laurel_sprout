@@ -413,11 +413,6 @@
         <fqname>@1.0::IPasrManager/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.xiaomi.hardware.displayfeature</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IDisplayFeature/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.xiaomi.hardware.fingerprintextension</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IXiaomiFingerprint/default</fqname>
