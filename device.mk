@@ -217,5 +217,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl \
+    android.hardware.vibrator@1.0-service
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/laurel_sprout/laurel_sprout-vendor.mk)
