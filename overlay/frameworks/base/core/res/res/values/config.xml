@@ -396,12 +396,12 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M -89.6 0 
-        C -65.1 0 -51.2 0.2 -37 31.3 
-        C -29.3 44.1 -15.5 53 0 53 
-        C 15.5 53 29.3 44.1 37 31.3 
-        C 51.2 0.2 65.1 0 89.6 0 
-        L -89.6 0 
+        M -89.6 0
+        C -65.1 0 -51.2 0.2 -37 31.3
+        C -29.3 44.1 -15.5 53 0 53
+        C 15.5 53 29.3 44.1 37 31.3
+        C 51.2 0.2 65.1 0 89.6 0
+        L -89.6 0
         Z
     </string>
 
@@ -493,4 +493,7 @@
     <!-- How long it takes for the HW to start illuminating after the illumination is requested. -->
     <integer name="config_udfps_illumination_transition_ms">0</integer>
 
+     <!-- Package name of a telephony-related system app, such as an IMS service.
+         Exempted from privacy indicators. -->
+    <string name="config_systemTelephonyPackage" translatable="false">com.qualcomm.qti.cne</string>
 </resources>
