@@ -13,15 +13,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-cc_binary {
+cc_prebuilt_binary {
     relative_install_path: "hw",
-    defaults: ["hidl_defaults"],
     name: "lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_trinket",
     init_rc: ["lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_trinket.rc"],
-    srcs: [
-	"service.cpp",
-        "FingerprintInscreen.cpp",
-    ],
+    srcs: ["lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_trinket"],
     shared_libs: [
         "libbase",
         "libhardware",
