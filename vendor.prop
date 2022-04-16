@@ -167,6 +167,7 @@ persist.backup.ntpServer=0.pool.ntp.org
 
 # Graphics
 debug.egl.hw=0
+debug.force_no_blanking=true
 debug.mdpcomp.logs=0
 debug.sf.hw=0
 debug.sf.disable_client_composition_cache=1
