@@ -22,6 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Inherit core gapps
+$(call inherit-product, vendor/gapps/core_config.mk)
+
 TARGET_BOOT_ANIMATION_RES := 720
 
 TARGET_HAS_FOD := true
@@ -42,3 +45,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 ALLOW_MISSING_DEPENDENCIES := true
+
+WITH_GMS := true
