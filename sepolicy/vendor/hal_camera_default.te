@@ -25,3 +25,5 @@ allow hal_camera_default vendor_xdsp_device:chr_file r_file_perms;
 allow hal_camera_default public_adsprpcd_file:file r_file_perms;
 
 allow hal_camera_default socket_device:sock_file write;
+
+get_prop(hal_camera_default, bootanim_system_prop)
