@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit core gapps
-$(call inherit-product, vendor/gapps/core_config.mk)
+$(call inherit-product, vendor/gapps/config_core.mk)
 
 TARGET_BOOT_ANIMATION_RES := 720
 
@@ -36,10 +36,10 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A3
 PRODUCT_MANUFACTURER := Xiaomi
 
-BUILD_FINGERPRINT := "Xiaomi/laurel_sprout/laurel_sprout:11/RKQ1.200903.002/V12.0.20.0.RFQMIXM:user/release-keys"
+BUILD_FINGERPRINT := "Xiaomi/laurel_sprout_eea/laurel_sprout:11/RKQ1.200903.002/V12.0.11.0.RFQEUXM:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="qssi-user 11 RKQ1.200903.002 V12.0.20.0.RFQMIXM release-keys" \
+    PRIVATE_BUILD_DESC="qssi-user 11 RKQ1.200903.002 V12.0.11.0.RFQEUXM release-keys" \
     PRODUCT_NAME="laurel_sprout"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
