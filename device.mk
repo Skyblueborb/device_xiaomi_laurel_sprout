@@ -196,7 +196,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
-
-# Lineage updater prop
-PRODUCT_PROPERTY_OVERRIDES += \
-    lineage.updater.uri=https://gitlab.com/MasterAwesome/laurel_sprout-builds/-/raw/master/response.json
