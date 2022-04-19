@@ -32,4 +32,14 @@ cc_binary {
         "vendor.xiaomi.hardware.fingerprintextension@1.0",
     ],
     system_ext_specific: true,
+    target: {
+        android: {
+            lto: {
+                thin: true,
+            },
+        },
+    },
+    cflags: [
+        "-O3",
+    ],
 }

@@ -21,6 +21,7 @@
 #include <android-base/logging.h>
 #include <fstream>
 #include <cmath>
+#include <thread>
 
 #define FINGERPRINT_ERROR_VENDOR 8
 
@@ -79,8 +80,11 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 }
 
 Return<void> FingerprintInscreen::onPress() {
-    set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
-    xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_FOD);
+    std::thread([this]() {
+            std::this_thread::sleep_for(std::chrono::milliseconds(6));
+            set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
+    	    xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_FOD);
+    }).detach();
     return Void();
 }
 
@@ -116,15 +120,7 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
 }
 
 Return<int32_t> FingerprintInscreen::getDimAmount(int32_t brightness) {
-    float alpha;
-
-    if (brightness > 62) {
-        alpha = 1.0 - pow(brightness / 255.0 * 430.0 / 600.0, 0.45);
-    } else {
-        alpha = 1.0 - pow(brightness / 200.0, 0.45);
-    }
-
-    return 255 * alpha;
+    return 0.0000004648768*pow(brightness, 4) - 0.0002623642627*pow(brightness, 3) + 0.0521699614936*pow(brightness, 2) - 4.6345723331031*brightness + 224.1109637488955;
 }
 
 Return<bool> FingerprintInscreen::shouldBoostBrightness() {
