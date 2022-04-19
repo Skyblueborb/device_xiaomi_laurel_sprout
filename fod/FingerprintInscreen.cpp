@@ -21,6 +21,7 @@
 #include <android-base/logging.h>
 #include <fstream>
 #include <cmath>
+#include <thread>
 
 #define FINGERPRINT_ERROR_VENDOR 8
 
@@ -79,8 +80,11 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 }
 
 Return<void> FingerprintInscreen::onPress() {
-    set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
-    xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_FOD);
+    std::thread([this]() {
+            std::this_thread::sleep_for(std::chrono::milliseconds(2));
+            set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
+    	    xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_FOD);
+    }).detach();
     return Void();
 }
 
@@ -138,15 +142,34 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
 }
 
 Return<int32_t> FingerprintInscreen::getDimAmount(int32_t brightness) {
-    float alpha;
-
-    if (brightness > 62.0) {
-        alpha = 1.0 - pow((((brightness / 255.0) * 430.0) / 600.0), 0.455);
-    } else {
-        alpha = 1.0 - pow((brightness / 210.0), 0.455);
-    }
-
-    return 255 * alpha;
+    if (brightness > 230) // 100-97%
+        return(int32_t)(255 + ((-12.08071) * pow((double)brightness, 0.52)));
+    else if (brightness > 160) // 97-91%
+        return(int32_t)(255 + ((-12.08071) * pow((double)brightness, 0.550452)));
+    else if (brightness > 100) // 91-83%
+        return(int32_t)(255 + ((-12.08071) * pow((double)brightness, 0.5677)));
+    else if (brightness > 50) // 83-70%
+        return(int32_t)(255 + ((-12.08071) * pow((double)brightness, 0.6233)));
+    else if (brightness > 20) // 70-49%
+        return(int32_t)(255 + ((-12.08071) * pow((double)brightness, 0.66385)));
+    else if (brightness >= 10) // 49-34%
+        return(int32_t)(255 + ((-12.08071) * pow((double)brightness, 0.75477)));
+    else if (brightness < 10) // 34-21%
+        switch (brightness) {
+            case 9: return 195;
+            case 8: return 197;
+            case 7: return 199;
+            case 6: return 201;
+            case 5: return 203;
+            case 4: return 207;
+            case 3: return 213;
+            case 2: return 214;
+            case 1: return 224;
+            case 0: return 255;
+            default:
+                return 100000;
+        }
+    else return 100000; // how tf do you even exist
 }
 
 Return<bool> FingerprintInscreen::shouldBoostBrightness() {
