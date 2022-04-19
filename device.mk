@@ -200,10 +200,3 @@ PRODUCT_PACKAGES_DEBUG += \
 # Lineage updater prop
 PRODUCT_PROPERTY_OVERRIDES += \
     lineage.updater.uri=https://gitlab.com/MasterAwesome/laurel_sprout-builds/-/raw/master/response.json
-
-# Volte
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.dbg.ims_volte_enable=1 \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1
