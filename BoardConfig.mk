@@ -64,6 +64,10 @@ TARGET_SCREEN_DENSITY := 320
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Fingerprint
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.laurel_sprout
+TARGET_USES_FOD_ZPOS := true
+
 # FM
 BOARD_HAVE_QCOM_FM := true
 BOARD_HAS_QCA_FM_SOC := cherokee
