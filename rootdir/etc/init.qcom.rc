@@ -453,11 +453,6 @@ on property:persist.vendor.radio.atfwd.start=false
 on property:vendor.radio.atfwd.start=false
     stop vendor.atfwd
 
-# corefile limit
-on property:persist.debug.trace=1
-    mkdir /data/core 0777 root root
-    write /proc/sys/kernel/core_pattern "/data/core/%E.%p.%e"
-
 #Bug439006, xiongwei.wt, ADD, 20190422, for battery charging off if CALL_STATE_OFFHOOK
 on property:persist.sys.chgdisabled=1
     write /sys/class/power_supply/battery/charging_call_state 0
