@@ -818,14 +818,6 @@ service diag_mdlog_stop /system/vendor/bin/diag_mdlog -k
     disabled
     oneshot
 
-##ExtR HONGMI-59466 huzhiqiang 20190417 add for capture wifi full log start
-service vendor.cnss_diag /system/vendor/bin/cnss_diag -q -f
-    class late_start
-    user system
-    group system wifi inet net_admin sdcard_rw media_rw diag
-    disabled
-    oneshot
-
 service vendor.tcpdump /vendor/bin/tcpdump -i any -W 2 -C 2 -s 134 -w /data/vendor/wlan_logs/tcpdump.pcap
     class main
     user root
