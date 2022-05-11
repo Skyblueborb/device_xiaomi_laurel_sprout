@@ -38,4 +38,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     <!-- Color of the FOD view -->
     <color name="config_fodColor">#00ffffff</color>
+
+    <!-- Show the network traffic monitor on statusbar even if the device has a notch -->
+    <bool name="config_forceShowNetworkTrafficOnStatusBar">true</bool>
+
 </resources>
