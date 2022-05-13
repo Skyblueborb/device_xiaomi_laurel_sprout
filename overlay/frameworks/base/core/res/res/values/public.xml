@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="array" name="config_biometric_sensors" id="0x7f010000" />
+    <public type="bool" name="config_fillMainBuiltInDisplayCutout" id="0x7f020000" />
+    <public type="dimen" name="rounded_corner_radius_bottom" id="0x7f030000" />
+    <public type="dimen" name="rounded_corner_radius_top" id="0x7f030001" />
+    <public type="dimen" name="status_bar_height_landscape" id="0x7f030002" />
+    <public type="dimen" name="status_bar_height_portrait" id="0x7f030003" />
+    <public type="string" name="config_mainBuiltInDisplayCutout" id="0x7f040000" />
+    <public type="xml" name="power_profile" id="0x7f050000" />
+</resources>
