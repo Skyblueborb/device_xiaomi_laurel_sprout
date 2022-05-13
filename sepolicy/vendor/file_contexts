@@ -1,10 +1,6 @@
-# FOD
-/sys/devices/platform/soc/5e00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/disp_param    u:object_r:sysfs_fod:s0
-/sys/devices/platform/soc/4a88000.i2c/i2c-1/1-0038/touch/tp_dev/fod_status          u:object_r:sysfs_fod:s0
-/sys/class/touch/tp_dev/fod_status                    u:object_r:sysfs_fod:s0
-
 # HALs
-/vendor/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1.0-service\.xiaomi_laurel_sprout            u:object_r:hal_lineage_fod_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2.3-service\.laurel_sprout            u:object_r:hal_fingerprint_default_exec:s0
+
 # Fingerprint
 /data/gf_data(/.*)?                             u:object_r:fingerprintd_data_file:s0
 /data/vendor/fpc(/.*)?                          u:object_r:fingerprint_vendor_data_file:s0
@@ -21,8 +17,16 @@
 /dev/lirc0                                      u:object_r:spidev_device:s0
 /dev/spidev[0-9]\.1                             u:object_r:spidev_device:s0
 
+# LED nodes
+/sys/devices/platform/soc/[a-z0-9]+.i2c/i2c-[0-9]/[0-9]-[a-z0-9]+/leds/ir(/.*)?                                                     u:object_r:sysfs_leds:s0
+
 # Light HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_trinket                     u:object_r:hal_light_default_exec:s0
 
+# Power
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.3-service\.laurel_sprout-libperfmgr                              u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats-service\.laurel_sprout               u:object_r:hal_power_stats_default_exec:s0
+
 # Thermal
 /data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0
+
