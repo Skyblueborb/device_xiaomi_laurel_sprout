@@ -169,6 +169,25 @@
 
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
+    
+    <!-- Vibrator pattern for feedback about a long screen/key press -->
+   <integer-array name="config_longPressVibePattern">
+       <item>0</item>
+       <item>12</item> 
+       <item>8</item>
+   </integer-array>
+
+    <!-- Vibrator pattern for feedback about touching a virtual key -->
+   <integer-array name="config_virtualKeyVibePattern">
+       <item>0</item>
+       <item>17</item>
+       <item>13</item>
+   </integer-array>
+
+    <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
+   <integer-array name="config_keyboardTapVibePattern">
+       <item>12</item>
+   </integer-array>
 
     <!-- Whether camera shutter sound is forced or not  (country specific). -->
     <bool name="config_camera_sound_forced">false</bool>
