@@ -22,6 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common Arrow stuff
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+SKIP_ABI_CHECKS := true
+
 # Inherit from laurel_sprout device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
