@@ -442,7 +442,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/google/interfaces
+    hardware/google/interfaces \
     vendor/qcom/opensource/interfaces \
     vendor/qcom/opensource/commonsys/system/bt    
 
