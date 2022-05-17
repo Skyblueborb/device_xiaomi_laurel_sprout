@@ -124,6 +124,8 @@ Return<void> BiometricsFingerprint::onFingerUp() {
 
 Return<void> BiometricsFingerprint::onHideUdfpsOverlay() {
     set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
+    xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
+    set(FOD_STATUS_PATH, FOD_STATUS_OFF);
     return Void();
 }
 
