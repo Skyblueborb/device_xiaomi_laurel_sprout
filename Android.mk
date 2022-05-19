@@ -114,5 +114,12 @@ $(IMS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(IMS_SYMLINKS)
 
+# Copy kernel headers to the build tree
+LOCAL_KERNEL_HEADERS := device/xiaomi/laurel_sprout-kernel/generated_kernel_headers
+$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr: $(wildcard $(LOCAL_KERNEL_HEADERS)/usr/*)
+	rm -rf $@
+	mkdir -p $@/
+	cp -a $(LOCAL_KERNEL_HEADERS)/usr/. $@/
+
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif

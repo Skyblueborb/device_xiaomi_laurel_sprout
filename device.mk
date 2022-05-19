@@ -382,7 +382,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
-    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
+    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf \
+    $(LOCAL_PATH)/configs/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
@@ -439,12 +440,21 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=Qualcomm \
     ro.soc.model=SM6125
 
+# DTB
+PRODUCT_COPY_FILES += \
+    device/xiaomi/laurel_sprout-kernel/dtb:dtb.img
+
+# Kernel
+PRODUCT_COPY_FILES += \
+    device/xiaomi/laurel_sprout-kernel/Image.gz-dtb:kernel
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     vendor/qcom/opensource/interfaces \
-    vendor/qcom/opensource/commonsys/system/bt    
+    vendor/qcom/opensource/commonsys/system/bt \
+    device/xiaomi/laurel_sprout-kernel/generated_kernel_headers
 
 QCOM_SOONG_NAMESPACE := $(LOCAL_PATH)
 
