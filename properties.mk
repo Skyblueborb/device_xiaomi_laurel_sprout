@@ -171,11 +171,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.overlay.izat.optin=rro
 
-# Iorap
-PRODUCT_PRODUCT_PROPERTIES += \
-    iorapd.perfetto.enable=true \
-    iorapd.readahead.enable=true
-
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
