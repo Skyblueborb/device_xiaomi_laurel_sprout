@@ -91,8 +91,7 @@ PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
 # Camera
-PRODUCT_PACKAGES += \
-    Snap
+$(call inherit-product, vendor/miuicamera/config.mk)
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
