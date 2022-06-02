@@ -89,8 +89,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := vendor/laurel_sprout-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/laurel_sprout
 TARGET_KERNEL_NO_LLVM_BINUTILS := true
-TARGET_KERNEL_CLANG_VERSION := r437112
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
+TARGET_KERNEL_CLANG_PATH := /home/wika/proton-clang
 
 # Platform
 TARGET_BOARD_PLATFORM := trinket
@@ -116,7 +115,7 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
-# Display	
+# Display
 TARGET_SCREEN_DENSITY := 320
 
 # DRM
