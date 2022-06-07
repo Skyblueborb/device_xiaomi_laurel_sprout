@@ -135,19 +135,50 @@ echo "0-3" > /dev/cpuset/restricted/cpus
 # configure governor settings for little cluster
 echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
 echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
-echo 1420800 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
-echo 1017600 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+echo 1612800 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
+echo 1420800 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 
 # configure governor settings for big cluster
 echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
 echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
-echo 1536000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
-echo 1056000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+echo 1804800 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
+echo 1536000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
 echo 20 > /proc/sys/vm/stat_interval
 
 # To override CAF's setup
 setprop vendor.dcvs.prop 1
+
+for device in /sys/devices/platform/soc
+do
+	for cpubw in $device/*cpu-cpu-ddr-bw/devfreq/*cpu-cpu-ddr-bw
+	do
+		echo "bw_hwmon" > $cpubw/governor
+		echo "2288 3440 4173 5195 5859 7759 10322 11863 13763" > $cpubw/bw_hwmon/mbps_zones
+		echo 4 > $cpubw/bw_hwmon/sample_ms
+		echo 50 > $cpubw/bw_hwmon/io_percent
+		echo 20 > $cpubw/bw_hwmon/hist_memory
+		echo 10 > $cpubw/bw_hwmon/hyst_length
+		echo 30 > $cpubw/bw_hwmon/down_thres
+		echo 0 > $cpubw/bw_hwmon/guard_band_mbps
+		echo 250 > $cpubw/bw_hwmon/up_scale
+		echo 1600 > $cpubw/bw_hwmon/idle_mbps
+		echo 40 > $cpubw/polling_interval
+	done
+
+	for memlat in $device/*cpu*-lat/devfreq/*cpu*-lat
+	do
+		echo "mem_latency" > $memlat/governor
+		echo 8 > $memlat/polling_interval
+		echo 400 > $memlat/mem_latency/ratio_ceil
+	done
+
+	for latfloor in $device/*cpu*-ddr-latfloor*/devfreq/*cpu-ddr-latfloor*
+	do
+		echo "compute" > $latfloor/governor
+		echo 8 > $latfloor/polling_interval
+	done
+done
 
 # colcoation v3 disabled
 echo 0 > /proc/sys/kernel/sched_min_task_util_for_boost
