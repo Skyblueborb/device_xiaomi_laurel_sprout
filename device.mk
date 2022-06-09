@@ -257,6 +257,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.sensors.enable.mag_filter=true
 
+# Speed profile services and wifi-service to reduce RAM and storage.
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 28
 
