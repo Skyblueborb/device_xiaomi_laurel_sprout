@@ -48,8 +48,7 @@ on early-fs
     start vold
 
     # Report max frequency to unity tasks
-    write /proc/sys/kernel/sched_lib_name "com.miHoYo.,UnityMain,libunity.so"
-    write /proc/sys/kernel/sched_lib_mask_force 255
+    write /proc/sys/kernel/sched_lib_name "com.miHoYo.,libunity.so"
 
 on fs
     mount_all /vendor/etc/fstab.qcom --early
