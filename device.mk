@@ -93,6 +93,11 @@ PRODUCT_PACKAGES_DEBUG += \
 # Camera
 $(call inherit-product, vendor/miuicamera/config.mk)
 
+# Expose auxilary camera props
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.camera.expose.aux=1 \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.xiaomi.cameratools,com.factory.mmigroup
+
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
