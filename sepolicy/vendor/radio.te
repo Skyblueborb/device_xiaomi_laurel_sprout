@@ -1,0 +1,7 @@
+get_prop(radio, vendor_audio_prop)
+
+# Allow radio to access msm sysfs
+allow radio sysfs_msm_subsys:dir r_dir_perms;
+
+# Allow binder communication with gpuservice
+binder_call(radio, gpuservice)
