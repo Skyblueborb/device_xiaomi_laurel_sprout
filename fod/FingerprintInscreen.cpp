@@ -84,9 +84,9 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 }
 
 Return<void> FingerprintInscreen::onPress() {
-    set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
     std::thread([this]() {
             std::this_thread::sleep_for(std::chrono::milliseconds(10));
+    	    set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
     	    xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_FOD);
     }).detach();
     return Void();
@@ -124,7 +124,7 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
 }
 
 Return<int32_t> FingerprintInscreen::getDimAmount(int32_t brightness) {
-    return(int32_t)(255 + ((-12.08071) * pow((double)brightness, 0.4))); 
+    return(int32_t)(255 + ((-12.08071) * pow((double)brightness, 0.2)));
 }
 
 Return<bool> FingerprintInscreen::shouldBoostBrightness() {
