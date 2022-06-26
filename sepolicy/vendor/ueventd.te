@@ -1,2 +1,0 @@
-# Allow access to read metadata file
-r_dir_file(ueventd, metadata_file);

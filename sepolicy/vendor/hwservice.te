@@ -1,9 +1,0 @@
-# Bluetooth
-type hal_bt_channel_avoidance_hwservice, hwservice_manager_type;
-
-# Fingerprint
-type hal_xiaomi_fingerprint_hwservice, hwservice_manager_type;
-
-# NXP services
-type nxpese_hwservice, hwservice_manager_type;
-type nxpnfc_hwservice, hwservice_manager_type;
