@@ -1,6 +1,6 @@
 bootstrap_go_package {
     name: "soong-xiaomi-trinket-plugins",
-    pkgPath: "device/xiaomi/sm6125-common",
+    pkgPath: "device/xiaomi/laurel_sprout",
     deps: [
         "blueprint",
         "blueprint-pathtools",
