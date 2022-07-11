@@ -19,8 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Arrow stuff
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common Lineage stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 SKIP_ABI_CHECKS := true
 TARGET_BOOT_ANIMATION_RES := 480
@@ -31,7 +31,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := arrow_laurel_sprout
+PRODUCT_NAME := lineage_laurel_sprout
 PRODUCT_MODEL := Mi A3
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
