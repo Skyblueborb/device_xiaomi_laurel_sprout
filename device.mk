@@ -210,8 +210,12 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# OTA
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    lineage.updater.uri=https://gstream.ga/0:/Others/Mi%20A3/Rom/LineageOS/Skyblueborb/laurel_sprout-gms.json
 
 # Volte
 PRODUCT_PRODUCT_PROPERTIES += \
