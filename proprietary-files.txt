@@ -315,5 +315,4 @@ system_ext/lib64/libqti-perfd-client_system.so
 system_ext/lib/libqti-perfd-client_system.so
 
 # Camera service
-system_ext/lib/libcameraservice.so
-system_ext/lib/vendor.qti.hardware.camera.device@3.2.so
+lib/libcameraservice.so
