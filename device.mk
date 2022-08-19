@@ -138,7 +138,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
-    
+
 # Config Store
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service \
@@ -388,7 +388,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json \
     $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
-	
+
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -439,7 +439,11 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge \
     android.hardware.sensors@2.0.vendor
 
-# SOC Properties
+# Shim
+PRODUCT_PACKAGES += \
+	libwatermark_shim
+
+# SOC Properties - for S
 PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=Qualcomm \
     ro.soc.model=SM6125
@@ -449,7 +453,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     vendor/qcom/opensource/interfaces \
-    vendor/qcom/opensource/commonsys/system/bt    
+    vendor/qcom/opensource/commonsys/system/bt
 
 QCOM_SOONG_NAMESPACE := $(LOCAL_PATH)
 
