@@ -70,6 +70,9 @@ on fs
 
     mkdir /mnt/vendor/persist/goodix 0777 system system
 
+    # Mount RW partitions which need run fsck
+    mount_all /vendor/etc/fstab.qcom --late
+
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
@@ -78,6 +81,9 @@ on early-boot
     write /dev/ipa 1
 
 on late-fs
+    # Wait for keymaster
+    exec_start wait_for_keymaster
+
     mount_all /vendor/etc/fstab.qcom --late
 
 service sec_nvm /vendor/bin/sec_nvm
