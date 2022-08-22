@@ -85,7 +85,7 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 
 Return<void> FingerprintInscreen::onPress() {
     std::thread([this]() {
-            std::this_thread::sleep_for(std::chrono::milliseconds(10));
+            std::this_thread::sleep_for(std::chrono::milliseconds(2));
             set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
     	    xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_FOD);
     }).detach();
@@ -124,7 +124,31 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
 }
 
 Return<int32_t> FingerprintInscreen::getDimAmount(int32_t brightness) {
-    return(int32_t)(255 + ((-12.08071) * pow((double)brightness, 0.4)));
+    if (brightness > 230) // 100-97%
+        return(int32_t)(255 + ((-12.08071) * pow((double)brightness, 0.52)));
+        /* return 100000; */
+    else if (brightness > 160) // 97-91%
+        return(int32_t)(255 + ((-12.08071) * pow((double)brightness, 0.550452)));
+        /* return 100000; */
+    else if (brightness > 100) // 91-83%
+        return(int32_t)(255 + ((-12.08071) * pow((double)brightness, 0.5677)));
+        /* return 100000; */
+    else if (brightness > 50) // 83-70%
+        return(int32_t)(255 + ((-12.08071) * pow((double)brightness, 0.6233)));
+        /* return 100000; */
+    else if (brightness > 20) // 70-49%
+        return(int32_t)(255 + ((-12.08071) * pow((double)brightness, 0.66385)));
+        /* return 100000; */
+    else if (brightness > 10) // 49-34%
+        return(int32_t)(255 + ((-12.08071) * pow((double)brightness, 0.75477)));
+        /* return 100000; */
+    else if (brightness > 4) // 34-21%
+        return(int32_t)(255 + ((-12.08071) * pow((double)brightness, 0.905)));
+        /* return 100000; */
+    else if (brightness <= 4) // 21-0%
+        return(int32_t)(255 + ((-12.8) * (double)brightness));
+        /* return 100000; */
+    else return 100000; // how tf do you even exist
 }
 
 Return<bool> FingerprintInscreen::shouldBoostBrightness() {
