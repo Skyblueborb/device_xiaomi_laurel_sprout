@@ -24,6 +24,6 @@
      <dimen name="fod_animation_offset_y">62dp</dimen>
 
      <!-- Padding around the status bar -->
-    <dimen name="rounded_corner_content_padding">10dp</dimen>     
+    <dimen name="rounded_corner_content_padding">35px</dimen>     
 
  </resources>
