@@ -1,4 +1,4 @@
-allow untrusted_app proc_zoneinfo:file { read };
+allow untrusted_app proc_zoneinfo:file r_file_perms;
 
 allow untrusted_app sysfs:dir r_dir_perms;
 
