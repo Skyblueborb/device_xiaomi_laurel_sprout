@@ -1,3 +1,11 @@
+allow untrusted_app app_data_file:file { execute };
+allow untrusted_app zygote:unix_stream_socket { getopt };
+
+allow untrusted_app { 
+  proc_pressure_mem
+  proc_zoneinfo
+}:file { read };
+
 allow untrusted_app proc_zoneinfo:file r_file_perms;
 
 allow untrusted_app sysfs:dir r_dir_perms;
