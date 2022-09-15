@@ -1,7 +1,6 @@
 # Bluetooth
 persist.vendor.bluetooth.modem_nv_support=true
 persist.vendor.btstack.aac_frm_ctl.enabled=true
-ro.bluetooth.library_name=libbluetooth_qti.so
 
 # Camera
 persist.vendor.camera.expose.aux=1
