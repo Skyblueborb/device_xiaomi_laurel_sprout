@@ -9,5 +9,6 @@ allow untrusted_app {
 allow untrusted_app proc_zoneinfo:file r_file_perms;
 
 allow untrusted_app sysfs:dir r_dir_perms;
+allow untrusted_app proc_pid_max:file { read };
 
 get_prop(untrusted_app, vendor_persist_camera_prop)
