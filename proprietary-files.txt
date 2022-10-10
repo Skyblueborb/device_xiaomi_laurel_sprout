@@ -3054,6 +3054,10 @@ vendor/lib64/libminksocket.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtrustedapploader.so
 
+# DRM - QSEECOMD - qssi-user 12 SKQ1.211006.001 V13.0.3.0.SJKMIXM release-keys
+vendor/lib/libspl.so|ec1ae86b1727e33c87fd8c00ebe02d8734510745
+vendor/lib64/libspl.so|e2b3e2dd28b0eee567d72de696cd1e01288ae06f
+
 # DSP
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
