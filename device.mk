@@ -455,8 +455,7 @@ PRODUCT_PACKAGES += \
 
 # Shim
 PRODUCT_PACKAGES += \
-    libgui_shim \
-	libwatermark_shim
+    libgui_shim
 
 # SOC Properties - for S
 PRODUCT_VENDOR_PROPERTIES += \

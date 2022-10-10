@@ -68,7 +68,6 @@ vendor/lib/libsymphonypower.so
 vendor/lib/libvideoutils.so
 vendor/lib/libvidhance.so
 vendor/lib/mibokeh_660_opencl.bin
-vendor/lib/miwatermark.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libseemore.so
@@ -2661,6 +2660,11 @@ vendor/lib/libmmcamera_laurus_s5kgd1_sunny.so
 vendor/lib/libmmcamera_laurus_sunny_imx586_eeprom.so
 vendor/lib/libmmcamera_laurus_sunny_s5k4h7_eeprom.so
 vendor/lib/libmmcamera_laurus_sunny_s5kgd1_eeprom.so
+
+# Camera Watermark - HEX patched
+vendor/lib/miwatermark.so|b24edcc3ea2c30a4813571bc8e9864a041059f48
+vendor/lib/miwatermark_vendor.so|ef255a28315772d67d8fdeded1edbe318265b682
+vendor/lib64/miwatermark_vendor.so|8c0668d5ef8883ea33e399ca3680c4850e520048
 
 # Consumerir
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.trinket.so
