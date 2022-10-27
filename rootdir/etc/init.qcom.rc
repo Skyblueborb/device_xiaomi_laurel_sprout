@@ -480,6 +480,10 @@ service qcom-c_main-sh /vendor/bin/init.class_main.sh
     group root system
     oneshot
 
+on property:vendor.post_boot.parsed=1
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
+
 on property:vold.decrypt=trigger_restart_framework
     start qcom-c_main-sh
     start wcnss-service
