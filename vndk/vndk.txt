@@ -10,7 +10,6 @@ android.frameworks.cameraservice.service@2.0
 android.frameworks.cameraservice.service@2.1
 android.frameworks.displayservice@1.0
 android.frameworks.schedulerservice@1.0
-android.frameworks.serservice@1.0
 android.frameworks.stats@1.0
 android.hardware.atrace@1.0
 android.hardware.audio.common@2.0
@@ -144,21 +143,12 @@ android.hardware.rebootescrow-V1-ndk
 android.hardware.secure_element@1.0
 android.hardware.secure_element@1.1
 android.hardware.secure_element@1.2
-android.hardware.sers@1.0
-android.hardware.sers@2.0
-android.hardware.sers@2.1
-android.hardwareundtrigger@2.0-core
-android.hardwareundtrigger@2.0
-android.hardwareundtrigger@2.1
-android.hardwareundtrigger@2.2
-android.hardwareundtrigger@2.3
 android.hardware.tetheroffload.config@1.0
 android.hardware.tetheroffload.control@1.0
 android.hardware.thermal@1.0
 android.hardware.thermal@1.1
 android.hardware.thermal@2.0
 android.hardware.tv.cec@1.0
-android.hardware.tv.cec@2.0
 android.hardware.tv.input@1.0
 android.hardware.tv.tuner@1.0
 android.hardware.usb.gadget@1.0
@@ -194,6 +184,5 @@ android.system.net.netd@1.0
 android.system.net.netd@1.1
 android.system.suspend@1.0
 android.system.wifi.keystore@1.0
-libadf
 libaudioroute
 libaudioutils

@@ -53,12 +53,6 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
-PRODUCT_PACKAGES += \
-    liba2dpoffload \
-    libhdmiedid \
-    libhfp \
-    libsndmonitor
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(LOCAL_PATH)/configs/audio/listen_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/listen_platform_info.xml \
@@ -99,9 +93,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     libbluetooth_audio_session \
-    libldacBT_dec \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
@@ -141,7 +133,6 @@ PRODUCT_COPY_FILES += \
 
 # Config Store
 PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-service \
     android.hardware.configstore@1.1-service
 
 # Disable Scudo
@@ -156,8 +147,6 @@ PRODUCT_PACKAGES += \
     gralloc.trinket \
     hwcomposer.trinket \
     memtrack.trinket \
-    libdisplayconfig \
-    libdisplayconfig.vendor \
     libdisplayconfig.qti \
     libtinyxml \
     libvulkan \
@@ -386,7 +375,6 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.laurel_sprout-libperfmgr \
-    android.hardware.power.stats-service.laurel_sprout \
     vendor.qti.hardware.perf@2.2.vendor
 
 PRODUCT_COPY_FILES += \
@@ -485,7 +473,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service \
-    thermal.trinket
 
 # Trust
 PRODUCT_PACKAGES += \
@@ -531,7 +518,6 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libaacwrapper \
     libnl \
     libwfdaac_vendor
 
