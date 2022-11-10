@@ -172,8 +172,8 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
-# Security patch level
-VENDOR_SECURITY_PATCH := 2021-05-05
+# Security patch level - V12.0.26.0.RFQMIXM
+VENDOR_SECURITY_PATCH := 2022-08-01
 
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
