@@ -34,6 +34,8 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     otapreopt_script
 
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
