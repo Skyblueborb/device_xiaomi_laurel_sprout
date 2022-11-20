@@ -339,7 +339,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 #RRO Overlays
 PRODUCT_PACKAGES += \
     RCMSystemUI \
-    RCMFramework
+    RCMFramework \
+	UdfpsSystemUI
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
