@@ -1,1 +1,2 @@
 allow untrusted_app_30 window_service:service_manager { find };
+allow untrusted_app persistent_data_block_service:service_manager { find };
