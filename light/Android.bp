@@ -25,6 +25,10 @@ cc_binary {
         "libutils",
         "android.hardware.light@2.0",
     ],
+    overrides: [
+        "lights.qcom",
+        "android.hardware.lights-service.qti",
+    ],
     relative_install_path : "hw",
     vendor: true,
 }
