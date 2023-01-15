@@ -33,7 +33,7 @@ persist.fuse_sdcard=true
 
 # Graphics
 debug.sf.enable_hwc_vds=1
-debug.sf.latch_unsignaled=1
+debug.sf.latch_unsignaled=0
 
 # Media
 debug.stagefright.ccodec=1
