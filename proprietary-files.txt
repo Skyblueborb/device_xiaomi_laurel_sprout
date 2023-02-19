@@ -314,8 +314,5 @@ system_ext/lib64/libavenhancements.so
 system_ext/lib64/libqti-perfd-client_system.so
 system_ext/lib/libqti-perfd-client_system.so
 
-# Camera service
-lib/libcameraservice.so
-
 # Wlan
 vendor/firmware/wlan/qca_cld/wlan_mac.bin
