@@ -130,6 +130,7 @@ ro.telephony.iwlan_operation_mode=legacy
 
 # Display
 ro.surface_flinger.use_color_management=true
+ro.vendor.sf.detect.aod.enable=true
 vendor.display.comp_mask=0
 vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
 vendor.display.disable_decimation=1
