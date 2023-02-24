@@ -51,11 +51,26 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libaudio-resampler \
+    libaudioroute \
+    libbatterylistener \
+    libcomprcapture \
+    libexthwplugin \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
+    libspkrprot \
+    libcirrusspkrprot \
+    libtinycompress \
     libvolumelistener \
-    libtinycompress
+    tinymix
+
+PRODUCT_PACKAGES += \
+    liba2dpoffload \
+    libhdmiedid \
+    libhfp \
+    libaudioroute.vendor \
+    libsndmonitor \
+    libstagefright_softomx_plugin.vendor
 
 # Audio configs
 PRODUCT_COPY_FILES += \
