@@ -1,0 +1,16 @@
+ro.adb.secure                       u:object_r:exported_default_prop:s0
+ro.build.software.version           u:object_r:exported_default_prop:s0
+ro.audio.soundfx.dirac              u:object_r:vendor_default_prop:s0
+
+persist.backup.ntpServer            u:object_r:vendor_default_prop:s0
+persist.dirac.acs.storeSettings     u:object_r:vendor_default_prop:s0
+persist.dirac.acs.controller        u:object_r:vendor_default_prop:s0
+persist.dirac.gef.ext.did           u:object_r:vendor_default_prop:s0
+persist.dirac.gef.ext.mid           u:object_r:vendor_default_prop:s0
+persist.dirac.gef.int.did           u:object_r:vendor_default_prop:s0
+persist.dirac.gef.int.mid           u:object_r:vendor_default_prop:s0
+persist.dirac.acs.ignore_error      u:object_r:vendor_default_prop:s0
+persist.vendor.bt.a2dp_offload_cap  u:object_r:vendor_default_prop:s0
+persist.demo.hdmirotationlock       u:object_r:vendor_default_prop:s0
+
+rild.libpath                        u:object_r:vendor_default_prop:s0
