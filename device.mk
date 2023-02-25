@@ -522,5 +522,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     lineage.updater.uri=https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-oss-gms.json
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0
+
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/laurel_sprout/laurel_sprout-vendor.mk)
