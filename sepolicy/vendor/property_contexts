@@ -30,6 +30,9 @@ vendor.fps_hal.                                 u:object_r:vendor_fp_prop:s0
 # Media
 gpu.stats.debug.level                   u:object_r:vendor_default_prop:s0
 
+# Power
+vendor.powerhal.                        u:object_r:vendor_power_prop:s0
+
 # RIL
 ro.product.wt.boardid                           u:object_r:exported_system_prop:s0
 ro.build.software.version               u:object_r:exported_default_prop:s0
