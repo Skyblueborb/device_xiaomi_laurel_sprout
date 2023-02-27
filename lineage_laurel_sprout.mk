@@ -14,44 +14,39 @@
 # limitations under the License.
 #
 
+# Inherit from laurel_sprout device
+$(call inherit-product, $(LOCAL_PATH)/device.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Ancient stuff
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+# Inherit some common Lineage stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from laurel_sprout device
-$(call inherit-product, $(LOCAL_PATH)/device.mk)
+# Inherit core gapps
+$(call inherit-product, vendor/gapps/config_core.mk)
 
-PRODUCT_BRAND := Xiaomi
+TARGET_BOOT_ANIMATION_RES := 720
+
+TARGET_HAS_FOD := true
+
+# Device identifier. This must come after all inclusions.
+PRODUCT_NAME := lineage_laurel_sprout
 PRODUCT_DEVICE := laurel_sprout
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := havoc_laurel_sprout
+PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A3
+PRODUCT_MANUFACTURER := Xiaomi
+
+BUILD_FINGERPRINT := "Xiaomi/laurel_sprout/laurel_sprout:11/RKQ1.200903.002/V12.0.26.0.RFQMIXM:user/release-keys"
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="qssi-user 11 RKQ1.200903.002 V12.0.26.0.RFQMIXM release-keys" \
+    PRODUCT_NAME="laurel_sprout"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-TARGET_VENDOR_PRODUCT_NAME := laurel_sprout
+ALLOW_MISSING_DEPENDENCIES := true
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="laurel_sprout-user 11 RKQ1.200903.002 V12.0.9.0.RFQMIXM release-keys"
-
-BUILD_FINGERPRINT := google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys
-
-PRODUCT_PACKAGES += \
-    RemovePackages
-#    FirefoxLite \
-#    GCamGo \
-#    GalleryGo2
-    
-# Official-ify
-HAVOC_BUILD_TYPE := Official
-TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS=true
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-
-# Use gestures by default
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+WITH_GMS := true
