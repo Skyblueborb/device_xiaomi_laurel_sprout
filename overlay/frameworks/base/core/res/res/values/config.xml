@@ -174,7 +174,7 @@
     </string-array>
 
     <!-- True if camera app should be pinned via Pinner Service -->
-    <bool name="config_pinnerCameraApp">true</bool>
+    <bool name="config_pinnerCameraApp">false</bool>
 
     <!-- Should the pinner service pin the Home application? -->
     <bool name="config_pinnerHomeApp">true</bool>
@@ -308,8 +308,8 @@
         <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
         <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
     </string-array>
-    
-    <!-- Screen off delay --> 
+
+    <!-- Screen off delay -->
     <integer name="config_screen_off_delay">0</integer>
-    
+
 </resources>
