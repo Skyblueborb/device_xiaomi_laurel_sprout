@@ -27,13 +27,13 @@
 
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N  1 zones as follows:
-         
+
          Zone 0:        0 <= LUX < array[0]
          Zone 1:        array[0] <= LUX < array[1]
          ...
          Zone N:        array[N - 1] <= LUX < array[N]
          Zone N + 1     array[N] <= LUX < infinity
-         
+
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
         <item>1</item>
@@ -60,12 +60,12 @@
          in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
          config_screenBrightnessMaximumNits, the display brightness is defined as the measured
          brightness of an all-white image.
-         
+
          If this is defined then:
             - config_autoBrightnessLcdBacklightValues should not be defined
             - config_screenBrightnessNits must be defined
             - config_screenBrightnessBacklight must be defined
-         
+
          This array should have size one greater than the size of the config_autoBrightnessLevels
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
@@ -106,7 +106,7 @@
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.
-         
+
          This array should be equal in size to config_screenBrightnessBacklight. -->
     <integer-array name="config_screenBrightnessBacklight">
         <item>1</item>
@@ -371,7 +371,7 @@
          should be measured with an all white image while the display is in the fully on state.
          Note that this value should *not* reflect the maximum brightness value for any high
          brightness modes but only the maximum brightness value obtainable in a sustainable manner.
-         
+
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
         <item>2.2</item>
@@ -658,7 +658,7 @@
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
      -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
-    
+
     <!-- Whether to enable doze always on -->
     <bool name="config_enableDozeAlwaysOn">true</bool>
 
@@ -672,7 +672,7 @@
     <dimen name="rounded_corner_radius_top">144.0px</dimen>
     <dimen name="rounded_corner_radius_top_adjustment">79.0px</dimen>
     <dimen name="status_bar_height_landscape">56px</dimen>
-    <dimen name="status_bar_height_portrait">70px</dimen>
+    <dimen name="status_bar_height_portrait">35.0dip</dimen>
 
     <!-- Whether the always on display mode is available. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
@@ -683,7 +683,7 @@
 
     <!-- If true, the display will be shifted around in ambient mode. -->
     <bool name="config_enableBurnInProtection">true</bool>
-    
+
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
          where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
@@ -691,11 +691,11 @@
     <string-array name="config_biometric_sensors" translatable="false" >
         <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
     </string-array>
-    
+
     <!-- Vibrator pattern for feedback about a long screen/key press -->
    <integer-array name="config_longPressVibePattern">
        <item>0</item>
-       <item>8</item> 
+       <item>8</item>
        <item>4</item>
    </integer-array>
 
@@ -710,7 +710,7 @@
    <integer-array name="config_keyboardTapVibePattern">
        <item>8</item>
    </integer-array>
-   
+
    <!-- Adaptive charge sysfs node and value for suspend/resume charging-->
    <string name="config_adaptiveChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
    <string name="config_adaptiveChargingSuspendValue" translatable="false">1</string>
