@@ -83,11 +83,6 @@ on late-fs
     exec_start wait_for_keymaster
     mount_all /vendor/etc/fstab.qcom --late
 
-service sec_nvm /vendor/bin/sec_nvm
-    class core
-    user system
-    group system
-
 on post-fs-data
 #    mkdir /data/vendor/hbtp 0750 system system
     mkdir /persist/qti_fp 0700 system system
@@ -162,7 +157,7 @@ on boot
     setprop vendor.usb.qdss.inst.name "qdss"
     setprop sys.usb.configfs 1
 
-    # Restrict permissions to socket file 
+    # Restrict permissions to socket file
     # to hide Magisk & co.
     chmod 440 /proc/net/unix
 
@@ -232,11 +227,6 @@ on property:vendor.display.lcd_density=160
 #
 #on property:persist.usb.chgdisabled=0
 #    write /sys/class/power_supply/battery/charging_enabled 1
-
-service spdaemon /vendor/bin/spdaemon
-    class core
-    user system
-    group system
 
 #service mpdecision /system/vendor/bin/mpdecision --avg_comp
 #   user root
@@ -458,28 +448,12 @@ service hbtp /system/vendor/bin/hbtp_daemon
      group system
      disabled
 
-service qfp-daemon /vendor/bin/qfp-daemon
-    class late_start
-    user system
-    group system drmrpc diag input
-
-service energy-awareness /system/vendor/bin/energy-awareness
-    class main
-    user system
-    group system
-    oneshot
-
 service audioshell_service /vendor/bin/audioshell_service
     oneshot
     disabled
 
 on property:ro.vendor.miui.region=*
     start audioshell_service
-
-service smcinvoked /system/bin/smcinvoked
-    class main
-    user system
-    group system
 
 service dcvs-sh /vendor/bin/init.qti.dcvs.sh
     class late_start
