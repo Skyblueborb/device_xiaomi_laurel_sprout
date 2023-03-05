@@ -1,6 +1,8 @@
 # Audio
+audio.sys.mute.latency.factor           u:object_r:vendor_default_prop:s0
 audio.sys.noisy.broadcast.delay         u:object_r:vendor_default_prop:s0
 audio.sys.offload.pstimeout.secs        u:object_r:vendor_default_prop:s0
+audio.sys.routing.latency               u:object_r:vendor_default_prop:s0
 audio_hal.in_period_size                u:object_r:vendor_default_prop:s0
 audio_hal.period_multiplier             u:object_r:vendor_default_prop:s0
 persist.audio.fluence.voicecomm         u:object_r:vendor_default_prop:s0
@@ -39,3 +41,8 @@ sys.thermal.                            u:object_r:thermal_engine_prop:s0
 
 # Wlan
 persist.vendor.wigig.npt.enable         u:object_r:vendor_default_prop:s0
+
+# Other
+ro.sf.force_light_brightness            u:object_r:vendor_default_prop:s0
+lineage.updater.uri                     u:object_r:vendor_default_prop:s0
+
