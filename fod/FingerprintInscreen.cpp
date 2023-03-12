@@ -81,7 +81,7 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 
 Return<void> FingerprintInscreen::onPress() {
     std::thread([this]() {
-            std::this_thread::sleep_for(std::chrono::milliseconds(2));
+            std::this_thread::sleep_for(std::chrono::milliseconds(6));
             set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
     	    xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_FOD);
     }).detach();
