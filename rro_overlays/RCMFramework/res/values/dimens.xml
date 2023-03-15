@@ -17,10 +17,10 @@
 -->
 <resources>
     
-    <!-- Radius of the software rounded corners. -->
+    <!-- Radius of the software system windows rounded corners. -->
     <dimen name="rounded_corner_radius">8dp</dimen>
-    <dimen name="rounded_corner_radius_bottom">128.0px</dimen>
-    <dimen name="rounded_corner_radius_top">144.0px</dimen>
+    <dimen name="rounded_corner_radius_bottom">28.0px</dimen>
+    <dimen name="rounded_corner_radius_top">28.0px</dimen>
 
     <!-- Adjustment for software rounded corners since corners aren't perfectly round. -->
     <dimen name="rounded_corner_radius_bottom_adjustment">46.0px</dimen>
