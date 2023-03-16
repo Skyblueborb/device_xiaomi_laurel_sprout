@@ -18,7 +18,7 @@
 <resources>
     
     <!-- Rounded mask values -->
-    <dimen name="config_rounded_mask_size">96px</dimen>
-    <dimen name="config_rounded_mask_size_top">96px</dimen>
-    <dimen name="config_rounded_mask_size_bottom">128px</dimen>
+    <dimen name="config_rounded_mask_size">28px</dimen>
+    <dimen name="config_rounded_mask_size_top">28px</dimen>
+    <dimen name="config_rounded_mask_size_bottom">28px</dimen>
 </resources>
