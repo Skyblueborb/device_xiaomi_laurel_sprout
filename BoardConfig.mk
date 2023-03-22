@@ -189,6 +189,9 @@ SELINUX_IGNORE_NEVERALLOWS := true
 # Treble
 BOARD_VNDK_VERSION := current
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
