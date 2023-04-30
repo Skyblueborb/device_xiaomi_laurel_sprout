@@ -106,7 +106,6 @@ Return<bool> BiometricsFingerprint::isUdfps(uint32_t) {
 }
 
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
-    set(FOD_STATUS_PATH, FOD_STATUS_ON);
     set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_FOD);
     return Void();
@@ -127,6 +126,7 @@ Return<void> BiometricsFingerprint::onHideUdfpsOverlay() {
 }
 
 Return<void> BiometricsFingerprint::onShowUdfpsOverlay() {
+    set(FOD_STATUS_PATH, FOD_STATUS_ON);
     return Void();
 }
 
