@@ -117,6 +117,9 @@ bluetooth.profile.sap.server.enabled?=true
 bluetooth.profile.ccp.server.enabled?=true
 bluetooth.profile.vcp.controller.enabled?=true
 
+# Camera
+camera.disable_zsl_mode=1
+
 # Chipset
 ro.soc.manufacturer=QTI
 ro.soc.model=SM6125
