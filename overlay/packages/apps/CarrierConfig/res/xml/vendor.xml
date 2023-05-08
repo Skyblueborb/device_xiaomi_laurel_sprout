@@ -110,6 +110,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_call_composer_supported_bool" value="false"/>
         <!-- Config for explicit call transfer support for an IMS call -->
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true" />
+
+        <!-- Enable 4G icon instead of LTE to save status bar space -->
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="001" mnc="01">
