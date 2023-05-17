@@ -135,6 +135,7 @@
       "Name": "TASchedtuneHighCap",
       "Path": "/dev/stune/top-app/schedtune.prefer_high_cap",
       "Values": [
+        "2",
         "1",
         "0"
       ],
@@ -261,6 +262,12 @@
       "Node": "CPUBigClusterMinFreq",
       "Duration": 1000,
       "Value": "1401600"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "SchedBoost",
+      "Duration": 0,
+      "Value": "2"
     },
     {
       "PowerHint": "LAUNCH",
