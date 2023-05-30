@@ -1,0 +1,3 @@
+# Hardware
+ro.hardware.chipname           u:object_r:build_prop:s0
+ro.hardware.alter              u:object_r:build_prop:s0
