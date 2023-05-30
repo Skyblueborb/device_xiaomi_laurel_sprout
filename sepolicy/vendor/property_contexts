@@ -41,3 +41,12 @@ sys.thermal.                            u:object_r:thermal_engine_prop:s0
 
 # Wlan
 persist.vendor.wigig.npt.enable         u:object_r:vendor_default_prop:s0
+
+# Recovery
+ro.recovery.usb.vid                     u:object_r:vendor_default_prop:s0
+ro.recovery.usb.adb.pid                 u:object_r:vendor_default_prop:s0
+ro.recovery.usb.fastboot.pid            u:object_r:vendor_default_prop:s0
+
+# Other
+persist.bluetooth.sbc_hd_higher_bitrate u:object_r:vendor_default_prop:s0
+renderthread.skia.reduceopstasksplitting u:object_r:vendor_default_prop:s0
