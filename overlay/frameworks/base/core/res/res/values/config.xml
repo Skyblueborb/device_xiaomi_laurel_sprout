@@ -864,8 +864,6 @@
 
     <!-- Height of the status bar -->
     <dimen name="rounded_corner_radius">8dp</dimen>
-    <dimen name="rounded_corner_radius_bottom_adjustment">46.0px</dimen>
-    <dimen name="rounded_corner_radius_top_adjustment">79.0px</dimen>
 
     <!-- Whether the always on display mode is available. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
