@@ -1,2 +1,0 @@
-allow hal_fingerprint hal_fingerprint:binder { call  transfer};
-allow hal_fingerprint sysfs_tp_fodstatus:file rw_file_perms;

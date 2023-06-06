@@ -39,3 +39,16 @@ genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-a
 genfscon sysfs /devices/platform/soc/soc:goodix_fp/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,smp2p_sleepstate/wakeup u:object_r:sysfs_wakeup:s0
 
+# Fingerprint
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/device_prepare        u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/fingerdown_wait       u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/irq                   u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup_enable         u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_goodix/proximity_state    u:object_r:sysfs_fingerprint:s0
+
+# FOD
+genfscon sysfs /sys/devices/platform/soc/4a88000.i2c/i2c-1/1-0038/touch/tp_dev/fod_status           u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /sys/devices/platform/soc/soc:qcom,dsi-display/fod_hbm                               u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /sys/devices/platform/soc/soc:qcom,dsi-display/dimlayer_hbm                          u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /sys/class/drm/card0-DSI-1/disp_param                                                u:object_r:sysfs_fingerprint:s0
+
