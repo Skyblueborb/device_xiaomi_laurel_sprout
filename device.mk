@@ -520,7 +520,7 @@ PRODUCT_PACKAGES += \
     Updater
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    lineage.updater.uri=https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-oss-gms.json
+    lineage.updater.uri=https://thebiggestboi.skyblueborb.workers.dev/0:/lineage-18.1-oss.json
 
 # Sensors
 PRODUCT_PACKAGES += \
