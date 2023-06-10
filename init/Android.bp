@@ -4,17 +4,14 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-xiaomi_trinket_init_library_static {
-    name: "libinit_trinket",
+
+cc_library_static {
+    name: "libinit_laurel_sprout",
     recovery_available: true,
-    srcs: [
-        "init_trinket.cpp",
-        "DeviceLibinit.cpp"
-    ],
+    srcs: ["init_laurel_sprout.cpp"],
     include_dirs: [
-        "system/libbase/include",
         "system/core/init",
-        "device/xiaomi/laurel_sprout"
+        "system/libbase/include"
     ],
     shared_libs: [
         "libbase",

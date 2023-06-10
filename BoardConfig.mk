@@ -81,8 +81,8 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
 HWUI_COMPILE_FOR_PERF := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_trinket
-TARGET_RECOVERY_DEVICE_MODULES := libinit_trinket
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_laurel_sprout
+TARGET_RECOVERY_DEVICE_MODULES := libinit_laurel_sprout
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
