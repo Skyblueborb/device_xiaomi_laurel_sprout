@@ -28,6 +28,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit core gapps
 # $(call inherit-product, vendor/gapps/config_core.mk)
 
+# Inherit ih8sn
+$(call inherit-product, $(LOCAL_PATH)/ih8sn/product.mk)
+
 TARGET_BOOT_ANIMATION_RES := 720
 
 TARGET_HAS_FOD := true
