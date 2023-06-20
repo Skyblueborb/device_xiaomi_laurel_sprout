@@ -1,0 +1,9 @@
+# Remove ih8sn config and executables
+if [ $(find ${SYSTEM_MNT}/system -name "*ih8sn*" | wc -l) -gt 0 ]; then
+    ui_print "Removing existing ih8sn files"
+    find ${SYSTEM_MNT}/system -name *ih8sn* -delete
+else
+    ui_print "No ih8sn files found"
+fi
+
+install_done

@@ -1,0 +1,38 @@
+# Set ih8sn config
+MODEL=$(getprop ro.product.model | tr ' ' '_' | sed 's/_*$//')
+SERIALNO=$(getprop ro.boot.serialno | tr ' ' '_' | sed 's/_*$//')
+PRODUCT=$(getprop ro.build.product | tr ' ' '_' | sed 's/_*$//')
+DEFAULT_CONFIG=system/etc/ih8sn.conf
+if [[ $(unzip -l "$ZIP" | grep ih8sn.conf."$MODEL"$) ]] && [[ ! -z "$MODEL" ]]; then
+    CONFIG=$DEFAULT_CONFIG.$MODEL
+elif [[ $(unzip -l "$ZIP" | grep ih8sn.conf."$SERIALNO"$) ]] && [[ ! -z "$SERIALNO" ]]; then
+    CONFIG=$DEFAULT_CONFIG.$SERIALNO
+elif [[ $(unzip -l "$ZIP" | grep ih8sn.conf."$PRODUCT"$) ]] && [[ ! -z "$PRODUCT" ]]; then
+    CONFIG=$DEFAULT_CONFIG.$PRODUCT
+else
+    CONFIG=$DEFAULT_CONFIG
+fi
+
+SDKVERSION=$(getprop ro.build.version.sdk)
+LIBKEYSTORE=libkeystore-attestation-application-id.so
+ARCH=$(getprop ro.product.cpu.abi | grep -o -E 'arm64-v8a|armeabi-v7a')
+if [ "$ARCH" = "arm64-v8a" ]; then
+    LIBDIR=lib64
+else
+    LIBDIR=lib
+fi
+
+ui_print "Copying files"
+unzip -qq "$ZIP" system/etc/init/ih8sn.rc system/addon.d/60-ih8sn.sh system/bin/ih8sn -d "${SYSTEM_MNT}/"
+
+ui_print "Using ih8sn config: $CONFIG"
+unzip -qqp "$ZIP" "$CONFIG" >"${SYSTEM_MNT}/$DEFAULT_CONFIG"
+
+if [[ $(unzip -l "$ZIP" | grep $LIBDIR/"$SDKVERSION"/$LIBKEYSTORE$) ]]; then
+    if $(grep -q '^FORCE_BASIC_ATTESTATION=1' "${SYSTEM_MNT}/$CONFIG") || ! $(grep -q '^FORCE_BASIC_ATTESTATION=0' "${SYSTEM_MNT}/$CONFIG"); then
+        ui_print "Using basic attestation patched lib"
+        unzip -qq "$ZIP" /system/$LIBDIR/"$SDKVERSION"/$LIBKEYSTORE -d "${SYSTEM_MNT}/"
+    fi
+fi
+
+install_done
