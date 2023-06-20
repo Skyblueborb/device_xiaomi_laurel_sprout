@@ -1,0 +1,4 @@
+BUILD_DESCRIPTION=dubai_g-user 12 S1RDS32.55-67-4 f3f840-bd528d release-keys
+BUILD_FINGERPRINT=motorola/dubai_g/dubai:12/S1RDS32.55-67-4/f3f840-bd528d:user/release-keys
+BUILD_SECURITY_PATCH_DATE=2022-08-01
+PRODUCT_NAME=dubai_g
