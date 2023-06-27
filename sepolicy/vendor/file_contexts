@@ -29,6 +29,9 @@
 # IR
 /dev/spidev[0-9]\.1                                                     u:object_r:lirc_device:s0
 
+# Sensors HAL
+/vendor/bin/hw/android\.hardware\.sensors@2.1-service\.xiaomi-multihal            u:object_r:hal_sensors_default_exec:s0
+
 # Thermal
 /data/vendor/thermal(/.*)?                                              u:object_r:thermal_data_file:s0
 
