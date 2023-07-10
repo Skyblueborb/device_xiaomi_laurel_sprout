@@ -262,6 +262,7 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    fstab.zram \
     init.class_main.sh \
     init.laurel.wifi.rc \
     init.msm.usb.configfs.rc \
