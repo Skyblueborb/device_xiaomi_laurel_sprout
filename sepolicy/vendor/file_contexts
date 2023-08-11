@@ -17,6 +17,7 @@
 
 # HALs
 /vendor/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1.0-service\.xiaomi_laurel_sprout            u:object_r:hal_lineage_fod_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock                 u:object_r:hal_power_stats_default_exec:s0
 
 # Fingerprint
 /data/gf_data(/.*)?                             u:object_r:fingerprintd_data_file:s0
