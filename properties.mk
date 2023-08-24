@@ -179,7 +179,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.renderer=skiagl \
 	debug.hwui.skia_atrace_enabled=false \
     debug.renderengine.backend=skiaglthreaded \
-    renderthread.skia.reduceopstasksplitting=true
+    renderthread.skia.reduceopstasksplitting=true \
+	persist.log.tag.OpenGLRenderer=S
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
