@@ -1,6 +1,13 @@
 # Bluetooth
-persist.vendor.bluetooth.modem_nv_support=true
-persist.vendor.btstack.aac_frm_ctl.enabled=true
+persist.vendor.bt.a2dp.aac_whitelist=false
+persist.vendor.bt.a2dp.mac_whitelist=false
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
+persist.vendor.btstack.connect.peer_earbud=true
+persist.vendor.btstack.enable.splita2dp=true
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.enable.twsplussho=true
+vendor.bluetooth.soc=cherokee
 
 # Camera
 persist.vendor.camera.expose.aux=1
