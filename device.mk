@@ -50,26 +50,12 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
-    liba2dpoffload \
-    libaudiopreprocessing \
-    libbatterylistener \
-    libbundlewrapper \
-    libcomprcapture \
-    libdownmix \
-    libdynproc \
-    libeffectproxy \
-    libexthwplugin \
-    libhdmiedid \
-    libhfp \
-    libldnhncr \
+    libaudio-resampler \
     libqcompostprocbundle \
-    libreverbwrapper \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libsndmonitor \
-    libspkrprot \
-    libvisualizer \
-    libvolumelistener
+    libvolumelistener \
+    libtinycompress
 
 # Audio configs
 PRODUCT_COPY_FILES += \
