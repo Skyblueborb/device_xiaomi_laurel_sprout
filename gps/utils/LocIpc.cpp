@@ -312,8 +312,8 @@ public:
     inline LocIpcRunnable(LocIpc& locIpc, unique_ptr<LocIpcRecver>& ipcRecver) :
             mAbortCalled(false),
             mLocIpc(locIpc),
-            mIpcRecver(move(ipcRecver)) {}
-    inline bool run() override {
+            mIpcRecver(std::move(ipcRecver)) {}
+    inline virtual bool run() override {
         if (mIpcRecver != nullptr) {
             mLocIpc.startBlockingListening(*(mIpcRecver.get()));
             if (!mAbortCalled) {
