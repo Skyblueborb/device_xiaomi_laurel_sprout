@@ -158,6 +158,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.trinket
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # Media configs
 PRODUCT_PACKAGES += \
     media_codecs.xml \

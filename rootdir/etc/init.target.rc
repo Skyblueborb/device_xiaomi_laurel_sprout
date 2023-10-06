@@ -166,6 +166,10 @@ on boot
     setprop vendor.usb.qdss.inst.name "qdss"
     setprop sys.usb.configfs 1
 
+# Lineage Health
+    chmod 0660 /sys/class/power_supply/battery/input_suspend
+    chown system system /sys/class/power_supply/battery/input_suspend
+
 #Give bk03 partition 0666 permissions, only in the ato version
 on boot && property:ro.factory_mode=1
 	chmod 0666 /dev/block/sde54
