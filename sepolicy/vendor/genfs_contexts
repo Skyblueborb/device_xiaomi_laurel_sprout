@@ -41,5 +41,8 @@ genfscon sysfs /devices/virtual/misc/msm_wma/wakeup                             
 genfscon sysfs /devices/virtual/misc/msm_wmapro/wakeup                                                                                                                                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/wakeup/wakeup                                                                                                                                                                                  u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/wsa-macro/wsa_swr_ctrl/wakeup/wakeup35                                                                                                                                                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:goodix_fp/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/wsa-macro/wsa_swr_ctrl/wakeup u:object_r:sysfs_wakeup:s0
+
 # Last kmsg
 genfscon proc /last_kmsg u:object_r:proc_last_kmsg:s0
