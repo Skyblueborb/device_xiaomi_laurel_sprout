@@ -249,7 +249,7 @@ PRODUCT_PACKAGES += \
 # HIDL VNDK
 $(foreach target, $(shell cat $(LOCAL_PATH)/vndk/vndk.txt), $(eval PRODUCT_PACKAGES += $(target).vendor))
 
-PRODUCT_EXTRA_VNDK_VERSIONS := 28 29 30
+PRODUCT_EXTRA_VNDK_VERSIONS := 31 32 33
 
 # Hotword Permissions
 PRODUCT_COPY_FILES += \
