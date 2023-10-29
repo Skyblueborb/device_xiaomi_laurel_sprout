@@ -1,26 +1,7 @@
 #
 # Copyright (C) 2018 The LineageOS Project
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
-
-#
-# This file sets variables that control the way modules are built
-# thorughout the system. It should not be used to conditionally
-# disable makefiles (the proper mechanism to control what gets
-# included in a build is to use PRODUCT_PACKAGES in a product
-# definition file).
-#
+# SPDX-License-Identifier: Apache-2.0
 
 DEVICE_PATH := device/xiaomi/laurel_sprout
 
@@ -53,12 +34,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a73
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 USE_CUSTOM_AUDIO_POLICY := 1
-BOARD_SUPPORTS_SOUND_TRIGGER := true
+BOARD_SUPPORTS_SOUND_TRIGGER := false
 AUDIO_FEATURE_ENABLED_GEF_SUPPORT := true
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
-
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1560
@@ -86,6 +64,10 @@ TARGET_SCREEN_DENSITY := 320
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Fingerprint
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.laurel_sprout
+TARGET_USES_FOD_ZPOS := true
+
 # FM
 BOARD_HAVE_QCOM_FM := true
 BOARD_HAS_QCA_FM_SOC := cherokee
@@ -103,8 +85,8 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
 HWUI_COMPILE_FOR_PERF := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_trinket
-TARGET_RECOVERY_DEVICE_MODULES := libinit_trinket
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_laurel_sprout
+TARGET_RECOVERY_DEVICE_MODULES := libinit_laurel_sprout
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
