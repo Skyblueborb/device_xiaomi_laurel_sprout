@@ -465,8 +465,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/interfaces \
     vendor/qcom/opensource/commonsys/system/bt
 
-QCOM_SOONG_NAMESPACE := $(LOCAL_PATH)
-
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 USE_DEX2OAT_DEBUG := false
