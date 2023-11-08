@@ -24,6 +24,8 @@
 # Inherit properties
 $(call inherit-product, $(LOCAL_PATH)/properties.mk)
 
+ENABLE_HYP = true
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -178,7 +180,7 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm-service.clearkey \
     android.hardware.drm@1.4.vendor
 
 PRODUCT_PACKAGES += \
