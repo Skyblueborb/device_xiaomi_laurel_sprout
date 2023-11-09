@@ -119,17 +119,17 @@ Return<void> BiometricsFingerprint::onFingerUp() {
     return Void();
 }
 
-Return<void> BiometricsFingerprint::onHideUdfpsOverlay() {
-    xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
-    set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
-    set(FOD_STATUS_PATH, FOD_STATUS_OFF);
-    return Void();
-}
+/* Return<void> BiometricsFingerprint::onHideUdfpsOverlay() { */
+/*     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE); */
+/*     set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF); */
+/*     set(FOD_STATUS_PATH, FOD_STATUS_OFF); */
+/*     return Void(); */
+/* } */
 
-Return<void> BiometricsFingerprint::onShowUdfpsOverlay() {
-    set(FOD_STATUS_PATH, FOD_STATUS_ON);
-    return Void();
-}
+/* Return<void> BiometricsFingerprint::onShowUdfpsOverlay() { */
+/*     set(FOD_STATUS_PATH, FOD_STATUS_ON); */
+/*     return Void(); */
+/* } */
 
 }  // namespace implementation
 }  // namespace V2_3
