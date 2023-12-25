@@ -106,6 +106,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>legacy/0</instance>
         </interface>
     </hal>
+    <!-- keymaster -->
+    <hal format="hidl">
+       <name>android.hardware.keymaster</name>
+       <transport>hwbinder</transport>
+       <fqname>@4.0::IKeymasterDevice/default</fqname>
+    </hal>
     <!-- TUI Communicator service -->
     <hal format="hidl">
         <name>vendor.qti.hardware.tui_comm</name>
