@@ -1,4 +1,9 @@
 hidl_package_root {
     name: "vendor.xiaomi",
-    path: "device/xiaomi/laurel_sprout/interfaces",
+    path: "device/xiaomi/laurel_sprout/interfaces/xiaomi",
+}
+
+hidl_package_root {
+    name: "vendor.goodix",
+    path: "device/xiaomi/laurel_sprout/interfaces/goodix",
 }
