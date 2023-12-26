@@ -71,7 +71,7 @@ class LaurelSproutUdfpsHander : public UdfpsHandler {
     }
 
     void onHideUdfpsOverlay() {
-        mDevice->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
+        mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_NONE);
         set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
         set(FOD_STATUS_PATH, FOD_STATUS_OFF);
     }
