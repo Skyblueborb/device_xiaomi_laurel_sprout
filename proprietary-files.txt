@@ -2719,11 +2719,6 @@ vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
 vendor/firmware/a640_gmu.bin
 
- HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
-
 # IPA
 vendor/firmware/ipa_fws.b00
 vendor/firmware/ipa_fws.b01
@@ -2802,9 +2797,11 @@ vendor/firmware/sign_xiaomi/a610_zap.b01
 vendor/firmware/sign_xiaomi/a610_zap.b02
 vendor/firmware/sign_xiaomi/a610_zap.elf
 vendor/firmware/sign_xiaomi/a610_zap.mdt
+vendor/firmware/goodix_cfg_group.bin
+vendor/firmware/goodix_firmware.bin
 
-# Wlan
-vendor/firmware/wlan/qca_cld/wlan_mac.bin
+# Wlan - from RKQ1.200903.002 V12.0.26.0.RFQMIXM
+vendor/firmware/wlan/qca_cld/wlan_mac.bin|fb562b09039bb7c0893619c2f5ce524a2ef64cc4
 
 # laurel_sprout package version: RKQ1.200903.002 V12.0.9.0.RFQMIXM, unless stated otherwise
 
@@ -2842,7 +2839,6 @@ vendor/lib/rfsa/adsp/libVC1Dec.so
 vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
 
 # Alarm
--product/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
@@ -2889,7 +2885,7 @@ vendor/lib64/libbtnv.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
-# Bluetooth aptX - from coral - QQ2A.200305.003
+# Bluetooth aptX - from coral QQ2A.200305.003
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
@@ -3062,7 +3058,7 @@ vendor/lib64/libminksocket.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtrustedapploader.so
 
-# DRM - QSEECOMD - qssi-user 12 SKQ1.211006.001 V13.0.3.0.SJKMIXM release-keys
+# DRM - from QSEECOMD qssi-user 12 SKQ1.211006.001 V13.0.3.0.SJKMIXM release-keys
 vendor/lib/libspl.so|ec1ae86b1727e33c87fd8c00ebe02d8734510745
 vendor/lib64/libspl.so|e2b3e2dd28b0eee567d72de696cd1e01288ae06f
 

@@ -5,10 +5,11 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+
 set -e
 
-DEVICE=laurel_sprout
-VENDOR=xiaomi
+DEVICE=**** FILL IN DEVICE NAME ****
+VENDOR=**** FILL IN VENDOR NAME ****
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -16,7 +17,7 @@ if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 ANDROID_ROOT="${MY_DIR}/../../.."
 
-HELPER="${MY_DIR}/extract-utils/extract_utils.sh"
+HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -54,19 +55,19 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        system_ext/lib64/lib-imsvideocodec.so)
-            "${PATCHELF}" --add-needed "libims_shim.so" "${2}"
+        vendor/lib/libsample1.so)
+            sed -i 's|/data/misc/sample1|/data/misc/sample2|g' "${2}"
             ;;
-        vendor/lib/miwatermark.so)
-            "${PATCHELF}" --add-needed "libwatermark_shim.so" "${2}"
+        vendor/lib64/libsample2.so)
+            "${PATCHELF}" --remove-needed "libsample3.so" "${2}"
+            "${PATCHELF}" --add-needed "libsample4.so" "${2}"
             ;;
-        vendor/lib64/mediadrm/libwvdrmengine.so | vendor/lib/mediadrm/libwvdrmengine.so | vendor/lib64/libwvhidl.so)
-            "${PATCHELF}"  --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
+        vendor/lib/libsample5.so)
+            "${PATCHELF}" --replace-needed "libsample6.so" "libsample7.so" "${2}"
             ;;
-        vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so)
-            "${PATCHELF}"  --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+        vendor/lib/libsample7.so)
+            "${PATCHELF}" --set-soname "libsample7.so" "${2}"
             ;;
-
     esac
 }
 
