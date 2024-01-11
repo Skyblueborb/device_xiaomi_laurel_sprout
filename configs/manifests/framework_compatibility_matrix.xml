@@ -1,4 +1,4 @@
-<compatibility-matrix version="1.0" type="framework" target-level="3">
+<compatibility-matrix version="1.0" type="framework" target-level="4">
     <hal format="hidl" optional="true">
         <name>android.hardware.audio.effect</name>
         <version>6.0</version>
@@ -857,13 +857,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>android.hardware.graphics.allocator</name>
-        <interface>
-            <name>IAllocator</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.lineage.touch</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -877,6 +870,30 @@
         </interface>
         <interface>
             <name>IKeySwapper</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.wifi</name>
+        <version>1</version>
+        <interface>
+            <name>IWifi</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.drm</name>
+        <version>1.0-3</version>
+        <interface>
+            <name>ICryptoFactory</name>
+            <instance>wfdhdcp</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.bluetooth.audio</name>
+        <version>2.0-2</version>
+        <interface>
+            <name>IBluetoothAudioProvidersFactory</name>
             <instance>default</instance>
         </interface>
     </hal>
