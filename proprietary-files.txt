@@ -3306,6 +3306,7 @@ vendor/lib64/vendor.display.postproc@1.0.so
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
 vendor/bin/irsc_util
+vendor/bin/mlid
 vendor/bin/pd-mapper
 vendor/lib64/libdiag.so
 vendor/lib64/libdsutils.so
@@ -3361,6 +3362,7 @@ vendor/bin/qrtr-lookup
 vendor/bin/qrtr-ns
 vendor/bin/qti
 vendor/bin/rmt_storage
+vendor/bin/ssgqmigd
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
