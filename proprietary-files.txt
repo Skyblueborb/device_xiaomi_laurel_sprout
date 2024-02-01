@@ -2707,9 +2707,11 @@ vendor/etc/qdcm_calib_data_td4330_video_mode_dsi_truly_panel.xml
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so
 vendor/lib64/libgf_hal.so
-vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprintext@1.0.so
+
+# Fingerprint sensor manually patched - from V12.0.26.0.RFQMIXM
+vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so|dcc4930a1fb1b4dc2b2fbd2c6d5c88450e9751b3
 
 # Graphics (Firmware)
 vendor/firmware/a610_zap.b00
