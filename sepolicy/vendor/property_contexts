@@ -51,4 +51,4 @@ ro.recovery.usb.fastboot.pid            u:object_r:vendor_default_prop:s0
 
 # Other
 persist.bluetooth.sbc_hd_higher_bitrate u:object_r:vendor_default_prop:s0
-renderthread.skia.reduceopstasksplitting u:object_r:vendor_default_prop:s0
+renderthread.skia.reduceopstasksplitting u:object_r:exported_system_prop:s0
