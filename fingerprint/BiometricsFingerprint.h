@@ -15,8 +15,7 @@
  * limitations under the License.
  */
 
-#ifndef ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
-#define ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
+#pragma once
 
 #include <android/hardware/biometrics/fingerprint/2.3/IBiometricsFingerprint.h>
 #include <android/log.h>
@@ -89,6 +88,14 @@ struct BiometricsFingerprint : public IBiometricsFingerprint, public IXiaomiFing
     Return<bool> isUdfps(uint32_t sensorId) override;
     Return<void> onFingerDown(uint32_t x, uint32_t y, float minor, float major) override;
     Return<void> onFingerUp() override;
+
+    // Check does device have UDFPS or not
+    static bool mHaveUdfps;
+
+    // Methods to get fingerprint HAL device
+private:
+    static fingerprint_device_t* getDeviceForVendor(const char* class_name);
+    static fingerprint_device_t* getFingerprintDevice();
 };
 
 }  // namespace implementation
@@ -97,5 +104,3 @@ struct BiometricsFingerprint : public IBiometricsFingerprint, public IXiaomiFing
 }  // namespace biometrics
 }  // namespace hardware
 }  // namespace android
-
-#endif  // ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
