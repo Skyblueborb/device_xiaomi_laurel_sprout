@@ -15,6 +15,113 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.secure_element</name>
+        <fqname>ISecureElement/SIM1</fqname>
+        <fqname>ISecureElement/SIM2</fqname>
+        <fqname>ISecureElement/SIM3</fqname>
+        <fqname>ISecureElement/eSE1</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.radio.data</name>
+        <fqname>IRadioData/slot1</fqname>
+        <fqname>IRadioData/slot2</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.radio.voice</name>
+        <fqname>IRadioVoice/slot1</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.radio.modem</name>
+        <fqname>IRadioModem/slot1</fqname>
+        <fqname>IRadioModem/slot2</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.radio.ims</name>
+        <fqname>IRadioIms/slot1</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.radio.network</name>
+        <fqname>IRadioNetwork/slot1</fqname>
+        <fqname>IRadioNetwork/slot2</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.radio.messaging</name>
+        <fqname>IRadioMessaging/slot1</fqname>
+        <fqname>IRadioMessaging/slot2</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.boot</name>
+        <fqname>IBootControl/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.gnss</name>
+        <fqname>IGnss/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.graphics.allocator</name>
+        <fqname>IAllocator/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.health</name>
+        <fqname>IHealth/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.input.processor</name>
+        <fqname>IInputProcessor/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.ir</name>
+        <fqname>IConsumerIr/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.light</name>
+        <fqname>ILights/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.memtrack</name>
+        <fqname>IMemtrack/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.oemlock</name>
+        <fqname>IOemLock/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.power.stats</name>
+        <fqname>IPowerStats/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.sensors</name>
+        <fqname>ISensors/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.soundtrigger3</name>
+        <fqname>ISoundTriggerHw/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.thermal</name>
+        <fqname>IThermal/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.usb</name>
+        <fqname>IUsb/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.usb.gadget</name>
+        <fqname>IUsbGadget/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.vibrator</name>
+        <fqname>IVibratorManager/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.weaver</name>
+        <fqname>IWeaver/default</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.lineage.health</name>
+        <fqname>IChargingControl/default</fqname>
+    </hal>
     <hal format="hidl" optional="false">
         <name>android.hidl.allocator</name>
         <version>1.0</version>
@@ -70,5 +177,10 @@
             <name>Isigma_miracast</name>
             <instance>sigmahal</instance>
         </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.data.iwlan</name>
+        <fqname>@1.0::IIWlan/slot1</fqname>
+        <fqname>@1.0::IIWlan/slot2</fqname>
     </hal>
 </compatibility-matrix>

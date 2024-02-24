@@ -38,6 +38,7 @@
         <name>android.hardware.light</name>
         <transport>hwbinder</transport>
         <fqname>@2.0::ILight/default</fqname>
+        <fqname>@2.0::ILights/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.media.omx</name>
@@ -73,6 +74,8 @@
         <transport>hwbinder</transport>
         <fqname>@1.2::ISecureElement/SIM1</fqname>
         <fqname>@1.2::ISecureElement/SIM2</fqname>
+        <fqname>@1.2::ISecureElement/SIM3</fqname>
+        <fqname>@1.2::ISecureElement/eSE1</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
@@ -88,6 +91,7 @@
         <name>android.hardware.vibrator</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IVibrator/default</fqname>
+        <fqname>@1.0::IVibratorManager/default</fqname>
     </hal>
     <hal format="hidl">
         <name>com.dsi.ant</name>
