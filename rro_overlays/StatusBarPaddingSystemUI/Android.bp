@@ -1,0 +1,8 @@
+runtime_resource_overlay {
+    name: "StatusBarPaddingSystemUI",
+    theme: "StatusBarPaddingSystemUI",
+    certificate: "platform",
+    sdk_version: "current",
+    system_ext_specific: true
+}
+

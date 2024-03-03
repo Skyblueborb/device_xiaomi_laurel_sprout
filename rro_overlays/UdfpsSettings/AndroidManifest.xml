@@ -14,16 +14,16 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.systemui.Udfps"
+    package="com.android.settings.Udfps"
     android:versionCode="1"
     android:versionName="1.0">
 
     <overlay
-    android:targetPackage="com.android.systemui"
+    android:targetPackage="com.android.settings"
     android:priority="0"
     android:isStatic="false" />
 
     <application
-    android:label="UdfpsSystemUI"
+    android:label="UdfpsSettings"
     android:hasCode="false" />
 </manifest>

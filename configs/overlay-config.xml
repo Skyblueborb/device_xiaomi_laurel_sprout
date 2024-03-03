@@ -1,0 +1,4 @@
+<config>
+    <overlay package="com.android.frameworks.paddings" mutable="true" enabled="true" />
+    <overlay package="com.android.systemui.paddings" mutable="true" enabled="true" />
+</config>

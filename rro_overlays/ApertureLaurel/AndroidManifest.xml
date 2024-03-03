@@ -14,16 +14,16 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.systemui.Udfps"
+    package="org.lineageos.aperture.laurel"
     android:versionCode="1"
     android:versionName="1.0">
 
     <overlay
-    android:targetPackage="com.android.systemui"
+    android:targetPackage="org.lineageos.aperture"
     android:priority="0"
-    android:isStatic="false" />
+    android:isStatic="true" />
 
     <application
-    android:label="UdfpsSystemUI"
+    android:label="ApertureLaurel"
     android:hasCode="false" />
 </manifest>

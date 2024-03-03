@@ -336,16 +336,25 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-#RRO Overlays
+# RRO Overlays
 PRODUCT_PACKAGES += \
-    RCMSystemUI \
-    RCMFramework \
-	UdfpsSystemUI
+	ApertureLaurel \
+	UdfpsSettings \
+	UdfpsSystemUI \
+    StatusBarPaddingFramework \
+    StatusBarPaddingSystemUI \
+	LaurelSystemUI \
+	LaurelWifiOverlay \
+    WifiOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
+    $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig \
+	$(LOCAL_PATH)/overlay-lineage
+
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/configs/overlay-config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/overlay/config/config.xml
 
 # Use gesture navigation by default
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -543,10 +552,8 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     libwpa_client \
     wcnss_service \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf \
-    LaurelWifiOverlay
 
 
 PRODUCT_COPY_FILES += \

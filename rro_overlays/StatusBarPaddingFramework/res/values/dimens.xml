@@ -16,16 +16,12 @@
 */
 -->
 <resources>
-    <!-- Padding for the lock icon on the keyguard. In pixels - should not scale with display size.
-         (Inner space from radius of bg circle to amount of pixels)-->
-    <dimen name="lock_icon_padding">30px</dimen>
 
-    <!-- Bottom margin size when fingerprint in display is active -->
-    <dimen name="keyguard_indication_margin_bottom_fingerprint_in_display">128dp</dimen>
-    <dimen name="keyguard_indication_margin_bottom">130dp</dimen>
+    <!-- Radius of the software system windows rounded corners. -->
+    <dimen name="rounded_corner_radius">8dp</dimen>
+    <dimen name="rounded_corner_radius_bottom">28.0px</dimen>
+    <dimen name="rounded_corner_radius_top">28.0px</dimen>
 
-    <!-- Bottom margin for fod animation -->
-    <dimen name="fod_animation_offset_x">62dp</dimen>
-    <dimen name="fod_animation_offset_y">62dp</dimen>
-
+    <dimen name="status_bar_height_default">36.0dip</dimen>
+    <dimen name="status_bar_height_portrait">36.0dip</dimen>
 </resources>
