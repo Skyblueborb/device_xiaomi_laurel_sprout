@@ -209,9 +209,6 @@ Return<uint64_t> BiometricsFingerprint::setNotify(
 }
 
 Return<uint64_t> BiometricsFingerprint::preEnroll() {
-    if (mUdfpsHandler) {
-        mUdfpsHandler->onShowUdfpsOverlay();
-    }
     return mDevice->pre_enroll(mDevice);
 }
 
@@ -223,7 +220,6 @@ Return<RequestStatus> BiometricsFingerprint::enroll(const hidl_array<uint8_t, 69
 
 Return<RequestStatus> BiometricsFingerprint::postEnroll() {
     if (mUdfpsHandler) {
-        mUdfpsHandler->onHideUdfpsOverlay();
         mUdfpsHandler->onFingerUp();
     }
     return ErrorFilter(mDevice->post_enroll(mDevice));
@@ -339,22 +335,6 @@ fingerprint_device_t* BiometricsFingerprint::openHal(const char* class_name) {
     }
 
     return fp_device;
-}
-
-Return<void> BiometricsFingerprint::onHideUdfpsOverlay() {
-    if (mUdfpsHandler) {
-        mUdfpsHandler->onHideUdfpsOverlay();
-    }
-
-    return Void();
-}
-
-Return<void> BiometricsFingerprint::onShowUdfpsOverlay() {
-    if (mUdfpsHandler) {
-        mUdfpsHandler->onShowUdfpsOverlay();
-    }
-
-    return Void();
 }
 
 void BiometricsFingerprint::notify(const fingerprint_msg_t* msg) {

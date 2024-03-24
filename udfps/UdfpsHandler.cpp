@@ -69,17 +69,9 @@ class LaurelSproutUdfpsHander : public UdfpsHandler {
 
     void cancel() {
         mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_NONE);
-    }
-
-    void onHideUdfpsOverlay() {
-        mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_NONE);
-        set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
         set(FOD_STATUS_PATH, FOD_STATUS_OFF);
     }
 
-    void onShowUdfpsOverlay() {
-        set(FOD_STATUS_PATH, FOD_STATUS_ON);
-    }
   private:
     fingerprint_device_t *mDevice;
 };
