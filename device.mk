@@ -338,7 +338,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
-	ApertureLaurel \
 	UdfpsSettings \
 	UdfpsSystemUI \
     StatusBarPaddingFramework \
