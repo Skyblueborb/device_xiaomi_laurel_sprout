@@ -21,9 +21,6 @@
 # definition file).
 #
 
-# Inherit properties
-$(call inherit-product, $(LOCAL_PATH)/properties.mk)
-
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \

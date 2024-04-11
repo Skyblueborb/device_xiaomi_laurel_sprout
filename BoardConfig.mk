@@ -24,6 +24,11 @@
 
 DEVICE_PATH := device/xiaomi/laurel_sprout
 
+# Props
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/properties/system_ext.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
+
 # A/B
 AB_OTA_UPDATER := true
 
