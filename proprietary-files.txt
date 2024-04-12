@@ -2813,5 +2813,5 @@ vendor/firmware/sign_xiaomi/a610_zap.b02
 vendor/firmware/sign_xiaomi/a610_zap.elf
 vendor/firmware/sign_xiaomi/a610_zap.mdt
 
-# Wlan
-vendor/firmware/wlan/qca_cld/wlan_mac.bin
+# Wlan - from RKQ1.200903.002 V12.0.26.0.RFQMIXM
+vendor/firmware/wlan/qca_cld/wlan_mac.bin|fb562b09039bb7c0893619c2f5ce524a2ef64cc4
