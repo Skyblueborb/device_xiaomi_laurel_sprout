@@ -26,6 +26,11 @@ persist.dpm.feature=1
 # Fuse storage
 persist.fuse_sdcard=true
 
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
 # IMS Debugging
 persist.vendor.ims.disableADBLogs=1
 persist.vendor.ims.disableDebugLogs=1
