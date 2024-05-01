@@ -145,8 +145,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
-# Security patch level
-VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
+# Security patch level - V12.0.26.0.RFQMIXM
+VENDOR_SECURITY_PATCH := 2022-08-01
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
