@@ -25,6 +25,12 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.qcom.class_core.sh",
+    src: "bin/init.qcom.class_core.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.qcom.sh",
     src: "bin/init.qcom.sh",
     vendor: true,
