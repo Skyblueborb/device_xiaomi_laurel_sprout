@@ -61,7 +61,7 @@ function blob_fixup() {
         vendor/lib/miwatermark.so)
             "${PATCHELF}" --add-needed "miwatermark_vendor.so" "${2}"
             ;;
-        vendor/lib64/mediadrm/libwvdrmengine.so | vendor/lib/mediadrm/libwvdrmengine.so | vendor/lib64/libwvhidl.so)
+        vendor/lib64/mediadrm/libwvdrmengine.so | vendor/lib/mediadrm/libwvdrmengine.so | vendor/lib64/libwvhidl.so | vendor/bin/sensors.qti | vendor/lib64/libsensorcal.so)
             "${PATCHELF}"  --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
             ;;
         vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so)
