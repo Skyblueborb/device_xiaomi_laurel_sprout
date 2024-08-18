@@ -54,6 +54,11 @@ function lib_to_package_fixup_vendor_variants() {
             camera.device@3.5-impl.so)
             echo "${1}_vendor"
             ;;
+        libOmxCore | \
+            libgrallocutils | \
+            libwfdaac_vendor | \
+            libhidlbase-v32 | \
+            libwpa_client) ;;
         *)
             return 1
             ;;
