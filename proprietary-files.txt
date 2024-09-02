@@ -947,19 +947,19 @@ vendor/firmware/cpp_firmware_v1_8_0.fw
 # Camera HIDL
 lib/vendor.qti.hardware.camera.device@3.2.so
 vendor/lib/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib/camera.device@1.0-impl.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/camera.device@3.4-impl.so
-vendor/lib/camera.device@3.5-impl.so
-vendor/lib/vendor.qti.hardware.camera.device@3.2.so
+vendor/lib/camera.device@1.0-impl.so;MODULE_SUFFIX=_vendor
+vendor/lib/camera.device@3.2-impl.so;MODULE_SUFFIX=_vendor
+vendor/lib/camera.device@3.3-impl.so;MODULE_SUFFIX=_vendor
+vendor/lib/camera.device@3.4-impl.so;MODULE_SUFFIX=_vendor
+vendor/lib/camera.device@3.5-impl.so;MODULE_SUFFIX=_vendor
+vendor/lib/vendor.qti.hardware.camera.device@3.2.so;MODULE_SUFFIX=_vendor
 vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib64/camera.device@1.0-impl.so
-vendor/lib64/camera.device@3.2-impl.so
-vendor/lib64/camera.device@3.3-impl.so
-vendor/lib64/camera.device@3.4-impl.so
-vendor/lib64/camera.device@3.5-impl.so
-vendor/lib64/vendor.qti.hardware.camera.device@3.2.so
+vendor/lib64/camera.device@1.0-impl.so;MODULE_SUFFIX=_vendor
+vendor/lib64/camera.device@3.2-impl.so;MODULE_SUFFIX=_vendor
+vendor/lib64/camera.device@3.3-impl.so;MODULE_SUFFIX=_vendor
+vendor/lib64/camera.device@3.4-impl.so;MODULE_SUFFIX=_vendor
+vendor/lib64/camera.device@3.5-impl.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.camera.device@3.2.so;MODULE_SUFFIX=_vendor
 
 # Camera-Interfaces
 vendor/lib/libmmcamera_interface.so
@@ -1257,7 +1257,7 @@ system_ext/lib64/libdpmtcm.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libdpmqmihal.so
 
 # DRM
@@ -1320,7 +1320,7 @@ system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -1492,7 +1492,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
-vendor/lib64/vendor.qti.imsrtpservice@3.0.so
+vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor
 
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
@@ -1537,10 +1537,10 @@ system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/lib/libFileMux_proprietary.so
-vendor/lib/libmmosal.so
+vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor
 vendor/lib/libmmrtpdecoder_proprietary.so
 vendor/lib/libmmrtpencoder_proprietary.so
-vendor/lib64/libmmosal.so
+vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
 
 # Media configs
 odm/etc/media_profiles_V1_0.xml
