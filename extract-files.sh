@@ -70,7 +70,7 @@ function blob_fixup() {
             ;;
         vendor/lib/miwatermark.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF}" --add-needed "miwatermark_vendor.so" "${2}"
+            "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
         vendor/bin/sensors.qti | vendor/lib64/libsensorcal.so)
             [ "$2" = "" ] && return 0
