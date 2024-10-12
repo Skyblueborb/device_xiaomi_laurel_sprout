@@ -945,21 +945,21 @@ vendor/firmware/cpp_firmware_v1_6_0.fw
 vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # Camera HIDL
-lib/vendor.qti.hardware.camera.device@3.2.so
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib/camera.device@1.0-impl.so;MODULE_SUFFIX=_vendor
-vendor/lib/camera.device@3.2-impl.so;MODULE_SUFFIX=_vendor
-vendor/lib/camera.device@3.3-impl.so;MODULE_SUFFIX=_vendor
-vendor/lib/camera.device@3.4-impl.so;MODULE_SUFFIX=_vendor
-vendor/lib/camera.device@3.5-impl.so;MODULE_SUFFIX=_vendor
-vendor/lib/vendor.qti.hardware.camera.device@3.2.so;MODULE_SUFFIX=_vendor
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib64/camera.device@1.0-impl.so;MODULE_SUFFIX=_vendor
-vendor/lib64/camera.device@3.2-impl.so;MODULE_SUFFIX=_vendor
-vendor/lib64/camera.device@3.3-impl.so;MODULE_SUFFIX=_vendor
-vendor/lib64/camera.device@3.4-impl.so;MODULE_SUFFIX=_vendor
-vendor/lib64/camera.device@3.5-impl.so;MODULE_SUFFIX=_vendor
-vendor/lib64/vendor.qti.hardware.camera.device@3.2.so;MODULE_SUFFIX=_vendor
+lib/vendor.qti.hardware.camera.device@3.2.so;DISABLE_DEPS
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so;DISABLE_DEPS
+vendor/lib/camera.device@1.0-impl.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor
+vendor/lib/camera.device@3.2-impl.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor
+vendor/lib/camera.device@3.3-impl.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor
+vendor/lib/camera.device@3.4-impl.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor
+vendor/lib/camera.device@3.5-impl.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor
+vendor/lib/vendor.qti.hardware.camera.device@3.2.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so;DISABLE_DEPS
+vendor/lib64/camera.device@1.0-impl.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor
+vendor/lib64/camera.device@3.2-impl.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor
+vendor/lib64/camera.device@3.3-impl.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor
+vendor/lib64/camera.device@3.4-impl.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor
+vendor/lib64/camera.device@3.5-impl.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.camera.device@3.2.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor
 
 # Camera-Interfaces
 vendor/lib/libmmcamera_interface.so
